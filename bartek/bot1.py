@@ -1,7 +1,8 @@
 import sys
+import os
 
 sys.path.append(
-    "/Users/barteksadlej/others/AlgoTrade/algotrade2024-warsaw-trade-ai/bot-example"
+    os.path.abspath("../bot-example")
 )
 from time import sleep
 from pprint import pprint
@@ -153,6 +154,7 @@ MEAN_ENERGY_PRICE_PER_HOUR = {}
 N_NEXT_BUY_PLANTS_TRIES = defaultdict(int)
 BUY_AFTER_N_SUCCESSFUL_TRIES = 10
 
+TOTAL_PRICE_SOLD_ENERGY = 0
 
 def run_with_inputs():
     # Get all games avaliable
@@ -265,6 +267,11 @@ def on_tick_start(api: AlgotradeApi):
         logger.debug(f"Money: {MONEY}")
         logger.debug(f"Matched trades: {MATCHED_TRADES}")
 
+        global TOTAL_PRICE_SOLD_ENERGY
+        TOTAL_PRICE_SOLD_ENERGY = get_total_price_sold_energy()
+
+        logger.debug(f"Total price sold energy: {TOTAL_PRICE_SOLD_ENERGY}")
+
 
 def get_energy_price(mean_energy_price_per_hour) -> float:
     return DATASET["max_energy_price"] * ENERGY_DISCOUNT
@@ -275,6 +282,25 @@ def get_energy_price(mean_energy_price_per_hour) -> float:
     #     )
     #     * ENERGY_DISCOUNT
     # )
+
+def sum_of_matched_trades(matched_trades):
+    result = 0.0
+    buy = matched_trades.get("buy", [])
+    for order in buy:
+        result -= order['total_price']
+
+    sell = matched_trades.get("sell", [])
+    for order in sell:
+        result += order['total_price']
+
+    logger.debug(f"Sum of matched trades: {result}")
+    return result
+
+def get_total_price_sold_energy():
+    s = sum_of_matched_trades(MATCHED_TRADES)
+    return MONEY - s
+    
+
 
 
 def check_if_power_plant_running(api: AlgotradeApi, resource: Resource):
