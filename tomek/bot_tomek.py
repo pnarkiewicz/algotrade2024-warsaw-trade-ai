@@ -47,7 +47,8 @@ def run_with_params(game_id: str = None, player_id: str = None):
     if player_id is not None:
         api.set_player_id(player_id)
 
-    api.get_plant_prices()
+    plant = api.get_plant_prices()
+    print(plant.json())
 
     print("Buying solar power plant")
     r = api.buy_plant(PowerPlant.SOLAR.value)

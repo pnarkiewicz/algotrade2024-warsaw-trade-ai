@@ -164,6 +164,12 @@ class AlgotradeApi:
         if end_tick:
             params["end_tick"] = end_tick
         return requests.get(url, params=params)
+    
+    def get_matched_trades(self):
+        return requests.get(
+            f"{self.URL}/game/{self.game_id}/player/{self.player_id}/trades",
+            params={"team_secret": self.team_secret},
+        )
 
     
 
