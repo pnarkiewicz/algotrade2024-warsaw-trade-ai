@@ -160,6 +160,8 @@ N_NEXT_BUY_PLANTS_TRIES = defaultdict(int)
 BUY_AFTER_N_SUCCESSFUL_TRIES = 10
 
 TOTAL_PRICE_SOLD_ENERGY = 0
+LAST_TICK = 0
+CURRENT_TICK = 0
 
 def run_with_inputs():
     # Get all games avaliable
@@ -257,6 +259,11 @@ def on_tick_start(api: AlgotradeApi):
             key: roi(value, PLANTS_PRICES[key]) for key, value in OUTPUT_PLANTS.items()
         }
 
+        global CURRENT_TICK, LAST_TICK
+        LAST_TICK = CURRENT_TICK
+        CURRENT_TICK = DATASET['tick']
+
+
         hour = datetime.fromisoformat(DATASET["date"]).hour
         CURRENT_HOUR = hour
         ENERGY_PRICE_PER_HOUR[hour].append(DATASET["max_energy_price"])
@@ -276,8 +283,6 @@ def on_tick_start(api: AlgotradeApi):
 
         global TOTAL_PRICE_SOLD_ENERGY
         TOTAL_PRICE_SOLD_ENERGY = get_total_price_sold_energy()
-
-        logger.debug(f"Total price sold energy: {TOTAL_PRICE_SOLD_ENERGY}")
 
 
 def get_energy_price(mean_energy_price_per_hour) -> float:
@@ -304,10 +309,17 @@ def sum_of_matched_trades(matched_trades):
     return result
 
 def get_total_price_sold_energy():
+    if CURRENT_TICK == LAST_TICK:
+        return 0
     s = sum_of_matched_trades(MATCHED_TRADES)
-    return MONEY - MONEY_HISTORY[-1] - s
+    result = MONEY - MONEY_HISTORY[-1] - s
+    logger.debug(f"Sold energy (price): {result:0.0f}")
+    return result
+
     
 def update_money_history():
+    if CURRENT_TICK == LAST_TICK:
+        return
     global MONEY_HISTORY
     MONEY_HISTORY.append(MONEY)
 
