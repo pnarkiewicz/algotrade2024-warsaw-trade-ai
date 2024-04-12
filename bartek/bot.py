@@ -114,15 +114,15 @@ ORDERS = Dict[str, Any]
 #     'expiration_tick': 316}]},
 
 MAX_VOLUME = {
-    "coal": 20,
-    "uranium": 20,
-    "biomass": 20,
-    "gas": 20,
-    "oil": 20,
-    "geothermal": 20,
-    "wind": 20,
-    "solar": 20,
-    "hydro": 20,
+    "coal": 4,
+    "uranium": 4,
+    "biomass": 4,
+    "gas": 4,
+    "oil": 4,
+    "geothermal": 4,
+    "wind": 4,
+    "solar": 4,
+    "hydro": 4,
 }
 
 CURRENT_VOLUME = {}
@@ -229,17 +229,24 @@ def check_if_power_plant_running(api: AlgotradeApi, resource: Resource):
             return False
         else:
             MONEY -= PLANTS_PRICES[resource.value]
-            r = api.buy_plant(resource.value)
-            logger.debug(f"Buying {resource.value} plant, response: {r.text}")
+            try:
+                r = api.buy_plant(resource.value)
+                logger.debug(f"Buying {resource.value} plant, response: {r.text}")
+            except Exception as e:
+                logger.debug(f"Error buying plant: {e}")
+                return False
     if POWERED_PLANTS[resource.value] == 0:
-        r = api.turn_on(resource.value, 1)
+        try:
+            r = api.turn_on(resource.value, 1)
+        except Exception as e:
+            logger.debug(f"Error turning on plant: {e}")
+            return False
         logger.debug(f"Turning on {resource.value} plant, response: {r.text}")
 
     return True
 
 
-def asset_arbitrage(api: AlgotradeApi, resource: Resource):
-    energy_price = get_energy_price()  # max energy price
+def asset_arbitrage(api: AlgotradeApi, resource: Resource, energy_price: float):
     if resource.value not in ORDERS:
         logger.debug(f"No orders for {resource.value}")
         return
@@ -265,16 +272,20 @@ def asset_arbitrage(api: AlgotradeApi, resource: Resource):
                 logger.debug(f"Volume of {resource.value} is too high")
                 break
 
-            r = api.create_order(
-                resource=resource.value,
-                price=resource_price[i]["price"] * (1 + BUY_MARGIN),
-                size=min(
-                    resource_price[i]["size"] * OWNED_PLANTS[resource.value] * 2,
-                    OWNED_PLANTS[resource.value] * 2,
-                ),
-                side="buy",
-                expiration_length=4,
-            )
+            try:
+                r = api.create_order(
+                    resource=resource.value,
+                    price=resource_price[i]["price"] * (1 + BUY_MARGIN),
+                    size=min(
+                        resource_price[i]["size"] * OWNED_PLANTS[resource.value] * 2,
+                        OWNED_PLANTS[resource.value] * 2,
+                    ),
+                    side="buy",
+                    expiration_length=4,
+                )
+            except Exception as e:
+                logger.debug(f"Error creating order: {e}")
+                continue
 
             global MONEY
             MONEY -= (
@@ -298,9 +309,13 @@ def tick():
     # Get current player stats
 
     on_tick_start(api)
+
+    energy_price = get_energy_price()  # max energy price
+    api.set_energy_price(energy_price)
+
     for resource in Resource:
         if resource.value in UNRENOVABLE:
-            asset_arbitrage(api, resource)
+            asset_arbitrage(api, resource, energy_price)
 
 
 if __name__ == "__main__":
