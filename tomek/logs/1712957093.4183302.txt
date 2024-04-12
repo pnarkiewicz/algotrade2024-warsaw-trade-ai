@@ -1,0 +1,903 @@
+23:24:53,432 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:24:53,650 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:24:57,695 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:24:57,888 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:00,676 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:00,771 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:01,729 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:01,929 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:01,935 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:02,111 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:02,121 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:02,324 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:02,333 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:02,426 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:25:02,435 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:02,696 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:02,704 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:02,800 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 20
+23:25:02,801 __main__ DEBUG Money: 50000000
+23:25:02,802 __main__ DEBUG Matched trades: {'buy': [], 'sell': []}
+23:25:02,802 __main__ DEBUG Outputs {'coal': [116], 'uranium': [1469], 'biomass': [126], 'gas': [303], 'oil': [383], 'geothermal': [42], 'wind': [16], 'solar': [162], 'hydro': [128]}
+23:25:02,802 __main__ DEBUG Roi {'coal': 3.834710743801653e-05, 'uranium': 1.5066666666666666e-05, 'biomass': 1.3016528925619835e-05, 'gas': 3.1224237427864795e-05, 'oil': 3.9566115702479336e-05, 'geothermal': 1.05e-05, 'wind': 8e-06, 'solar': 0.000162, 'hydro': 1.065956118084287e-05}
+23:25:02,802 __main__ DEBUG Energy price: 412.0
+23:25:02,804 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:02,906 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/buy?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:02,908 __main__ DEBUG Buying coal plant, response: {"successful":true,"message":"Operation done successfully"}
+23:25:02,910 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:03,86 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/on?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:03,88 __main__ DEBUG Turning on coal plant, response: {"successful":true,"message":"Operation done successfully"}
+23:25:03,90 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:03,169 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 400 44
+23:25:03,171 __main__ DEBUG Buying coal price: 22622.25, size: 51, response: {"detail":"Size (0) must be greater than 0"}
+23:25:03,171 __main__ DEBUG Energy price: 412.0
+23:25:03,171 __main__ DEBUG Not enough money to buy uranium plant
+23:25:03,171 __main__ DEBUG Energy price: 412.0
+23:25:03,171 __main__ DEBUG Energy price: 412.0
+23:25:03,173 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:03,248 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/buy?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:03,250 __main__ DEBUG Buying gas plant, response: {"successful":true,"message":"Operation done successfully"}
+23:25:03,252 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:03,741 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/on?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:03,742 __main__ DEBUG Turning on gas plant, response: {"successful":true,"message":"Operation done successfully"}
+23:25:03,745 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:03,828 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 400 44
+23:25:03,830 __main__ DEBUG Buying gas price: 59771.25, size: 11, response: {"detail":"Size (0) must be greater than 0"}
+23:25:03,830 __main__ DEBUG Energy price: 412.0
+23:25:03,832 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:03,929 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/buy?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:03,930 __main__ DEBUG Buying oil plant, response: {"successful":true,"message":"Operation done successfully"}
+23:25:03,932 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:04,136 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/on?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:04,139 __main__ DEBUG Turning on oil plant, response: {"successful":true,"message":"Operation done successfully"}
+23:25:04,141 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:04,230 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 400 44
+23:25:04,232 __main__ DEBUG Buying oil price: 64286.25, size: 12, response: {"detail":"Size (0) must be greater than 0"}
+23:25:05,246 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:05,333 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:05,342 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:05,551 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:05,561 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:05,844 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:25:05,854 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:06,66 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:06,76 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:06,283 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 20
+23:25:06,290 __main__ DEBUG Money: 27591000
+23:25:06,291 __main__ DEBUG Matched trades: {'buy': [], 'sell': []}
+23:25:06,291 __main__ DEBUG Outputs {'coal': [116, 116], 'uranium': [1469, 1468], 'biomass': [126, 126], 'gas': [303, 303], 'oil': [383, 383], 'geothermal': [42, 42], 'wind': [16, 18], 'solar': [162, 175], 'hydro': [128, 128]}
+23:25:06,291 __main__ DEBUG Roi {'coal': 3.393549330797923e-05, 'uranium': 1.5061538461538462e-05, 'biomass': 1.3016528925619835e-05, 'gas': 2.7632068520234336e-05, 'oil': 3.501426168361004e-05, 'geothermal': 1.05e-05, 'wind': 8.5e-06, 'solar': 0.0001685, 'hydro': 1.065956118084287e-05}
+23:25:06,291 __main__ DEBUG Energy price: 398.40000000000003
+23:25:06,297 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:06,384 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:06,387 __main__ DEBUG Buying coal price: 22622.25, size: 51, response: "01HVA36A86GCZG8A2REQ2CA0NX"
+23:25:06,387 __main__ DEBUG Energy price: 398.40000000000003
+23:25:06,387 __main__ DEBUG Not enough money to buy uranium plant
+23:25:06,387 __main__ DEBUG Energy price: 398.40000000000003
+23:25:06,387 __main__ DEBUG Energy price: 398.40000000000003
+23:25:06,391 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:06,623 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:06,625 __main__ DEBUG Buying gas price: 60954.600000000006, size: 8, response: "01HVA36AC7A02B8KNZHC4MNKY3"
+23:25:06,625 __main__ DEBUG Energy price: 398.40000000000003
+23:25:06,628 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:06,886 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:06,888 __main__ DEBUG Buying oil price: 64286.25, size: 12, response: "01HVA36AJBCP64NMXYM76298HF"
+23:25:07,898 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:08,106 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:08,109 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:08,328 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:08,337 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:08,426 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:25:08,434 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:08,634 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:08,638 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:08,984 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 20
+23:25:08,985 __main__ DEBUG Money: 27591000
+23:25:08,985 __main__ DEBUG Matched trades: {'buy': [], 'sell': []}
+23:25:08,985 __main__ DEBUG Outputs {'coal': [116, 116, 116], 'uranium': [1469, 1468, 1467], 'biomass': [126, 126, 126], 'gas': [303, 303, 303], 'oil': [383, 383, 383], 'geothermal': [42, 42, 49], 'wind': [16, 18, 19], 'solar': [162, 175, 148], 'hydro': [128, 128, 128]}
+23:25:08,985 __main__ DEBUG Roi {'coal': 3.393549330797923e-05, 'uranium': 1.5056410256410256e-05, 'biomass': 1.3016528925619835e-05, 'gas': 2.7632068520234336e-05, 'oil': 3.501426168361004e-05, 'geothermal': 1.1083333333333335e-05, 'wind': 8.833333333333334e-06, 'solar': 0.00016166666666666665, 'hydro': 1.065956118084287e-05}
+23:25:08,985 __main__ DEBUG Energy price: 399.20000000000005
+23:25:08,988 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:09,163 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:09,165 __main__ DEBUG Buying coal price: 22622.25, size: 51, response: "01HVA36CVXVA7MPQ9TAE94WGRR"
+23:25:09,165 __main__ DEBUG Energy price: 399.20000000000005
+23:25:09,165 __main__ DEBUG Not enough money to buy uranium plant
+23:25:09,165 __main__ DEBUG Energy price: 399.20000000000005
+23:25:09,165 __main__ DEBUG Energy price: 399.20000000000005
+23:25:09,168 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:09,380 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:09,387 __main__ DEBUG Buying gas price: 60954.600000000006, size: 8, response: "01HVA36D280WZKHX838JYKXVZ7"
+23:25:09,387 __main__ DEBUG Energy price: 399.20000000000005
+23:25:09,391 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:09,617 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:09,622 __main__ DEBUG Buying oil price: 64286.25, size: 12, response: "01HVA36D9W1AGW75E029ST4R53"
+23:25:10,629 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:10,822 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:10,826 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:11,83 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:11,89 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:11,190 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:25:11,195 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:11,477 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:11,485 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:11,576 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:11,583 __main__ DEBUG Money: 27148422
+23:25:11,583 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA36A86GCZG8A2REQ2CA0NX', 'sell_order_id': '01HVA361DV12K96CH3XPCGA3NQ', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 616, 'total_price': 43090, 'trade_size': 2, 'trade_price': 21545}, {'buy_order_id': '01HVA36CVXVA7MPQ9TAE94WGRR', 'sell_order_id': '01HVA361DV12K96CH3XPCGA3NQ', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 616, 'total_price': 43090, 'trade_size': 2, 'trade_price': 21545}, {'buy_order_id': '01HVA36AC7A02B8KNZHC4MNKY3', 'sell_order_id': '01HVA361E6K0XSR3JMD24Q7M8E', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 616, 'total_price': 116104, 'trade_size': 2, 'trade_price': 58052}, {'buy_order_id': '01HVA36D280WZKHX838JYKXVZ7', 'sell_order_id': '01HVA361E64C42BP5AQT55K719', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 616, 'total_price': 117232, 'trade_size': 2, 'trade_price': 58616}, {'buy_order_id': '01HVA36AJBCP64NMXYM76298HF', 'sell_order_id': '01HVA361E7GMRHM3Q0G40XAVRG', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 616, 'total_price': 61225, 'trade_size': 1, 'trade_price': 61225}, {'buy_order_id': '01HVA36AJBCP64NMXYM76298HF', 'sell_order_id': '01HVA361E776YR6D7124YGQNGF', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 616, 'total_price': 61837, 'trade_size': 1, 'trade_price': 61837}], 'sell': []}
+23:25:11,583 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116], 'uranium': [1469, 1468, 1467, 1466], 'biomass': [126, 126, 126, 126], 'gas': [303, 303, 303, 303], 'oil': [383, 383, 383, 383], 'geothermal': [42, 42, 49, 52], 'wind': [16, 18, 19, 19], 'solar': [162, 175, 148, 105], 'hydro': [128, 128, 128, 128]}
+23:25:11,583 __main__ DEBUG Roi {'coal': 3.393549330797923e-05, 'uranium': 1.5051282051282051e-05, 'biomass': 1.3016528925619835e-05, 'gas': 2.7632068520234336e-05, 'oil': 3.501426168361004e-05, 'geothermal': 1.15625e-05, 'wind': 9e-06, 'solar': 0.0001475, 'hydro': 1.065956118084287e-05}
+23:25:11,584 __main__ DEBUG Energy price: 401.6
+23:25:11,587 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:11,791 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:11,797 __main__ DEBUG Buying coal price: 22593.9, size: 52, response: "01HVA36FE68Z71BZC6N2C3ABXT"
+23:25:11,797 __main__ DEBUG Energy price: 401.6
+23:25:11,797 __main__ DEBUG Not enough money to buy uranium plant
+23:25:11,797 __main__ DEBUG Energy price: 401.6
+23:25:11,797 __main__ DEBUG Energy price: 401.6
+23:25:11,801 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:12,131 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:12,134 __main__ DEBUG Buying gas price: 59022.600000000006, size: 12, response: "01HVA36FMK72M3ZG5VD4VRNQ3R"
+23:25:12,134 __main__ DEBUG Energy price: 401.6
+23:25:12,139 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:12,224 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:12,229 __main__ DEBUG Buying oil price: 64315.65, size: 12, response: "01HVA36FYJ2MWTAZQMW6M9S0BE"
+23:25:13,236 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:13,443 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:13,450 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:13,655 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:13,664 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:13,757 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:25:13,766 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:14,2 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:14,8 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:14,294 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:14,297 __main__ DEBUG Money: 26745602
+23:25:14,297 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA36FE68Z71BZC6N2C3ABXT', 'sell_order_id': '01HVA36D5R8M76FHR60P9PVXP8', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 617, 'total_price': 43036, 'trade_size': 2, 'trade_price': 21518}, {'buy_order_id': '01HVA36FMK72M3ZG5VD4VRNQ3R', 'sell_order_id': '01HVA36D60PEFVNNV354C3VCYN', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 617, 'total_price': 113548, 'trade_size': 2, 'trade_price': 56774}, {'buy_order_id': '01HVA36D9W1AGW75E029ST4R53', 'sell_order_id': '01HVA36D62EBH298SXASM2JWJ5', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 617, 'total_price': 122506, 'trade_size': 2, 'trade_price': 61253}, {'buy_order_id': '01HVA36FYJ2MWTAZQMW6M9S0BE', 'sell_order_id': '01HVA36D63S9TY3DNBWDK715S1', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 617, 'total_price': 123730, 'trade_size': 2, 'trade_price': 61865}], 'sell': []}
+23:25:14,297 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116], 'uranium': [1469, 1468, 1467, 1466, 1466], 'biomass': [126, 126, 126, 126, 126], 'gas': [303, 303, 303, 303, 303], 'oil': [383, 383, 383, 383, 383], 'geothermal': [42, 42, 49, 52, 56], 'wind': [16, 18, 19, 19, 18], 'solar': [162, 175, 148, 105, 57], 'hydro': [128, 128, 128, 128, 128]}
+23:25:14,297 __main__ DEBUG Roi {'coal': 3.393549330797923e-05, 'uranium': 1.504820512820513e-05, 'biomass': 1.3016528925619835e-05, 'gas': 2.7632068520234336e-05, 'oil': 3.501426168361004e-05, 'geothermal': 1.2050000000000002e-05, 'wind': 9e-06, 'solar': 0.0001294, 'hydro': 1.065956118084287e-05}
+23:25:14,297 __main__ DEBUG Energy price: 408.8
+23:25:14,301 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:14,477 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:14,483 __main__ DEBUG Buying coal price: 22593.9, size: 52, response: "01HVA36J22J8ZKTG320B3WQ5AM"
+23:25:14,483 __main__ DEBUG Energy price: 408.8
+23:25:14,483 __main__ DEBUG Not enough money to buy uranium plant
+23:25:14,483 __main__ DEBUG Energy price: 408.8
+23:25:14,483 __main__ DEBUG Energy price: 408.8
+23:25:14,487 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:14,677 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:14,681 __main__ DEBUG Buying gas price: 59612.700000000004, size: 11, response: "01HVA36JBA8W1MY0D0J87PD679"
+23:25:14,682 __main__ DEBUG Energy price: 408.8
+23:25:14,685 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:14,864 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:14,866 __main__ DEBUG Buying oil price: 64958.25, size: 11, response: "01HVA36JE735NM0TS0R28Z8QD9"
+23:25:15,870 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:15,987 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:15,992 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:16,329 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:16,333 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:16,413 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:25:16,417 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:16,614 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:16,621 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:16,892 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:16,898 __main__ DEBUG Money: 26463040
+23:25:16,899 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA36J22J8ZKTG320B3WQ5AM', 'sell_order_id': '01HVA36D5R8M76FHR60P9PVXP8', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 618, 'total_price': 43036, 'trade_size': 2, 'trade_price': 21518}, {'buy_order_id': '01HVA36JBA8W1MY0D0J87PD679', 'sell_order_id': '01HVA36D6154R8CY22GMA6N7KB', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 618, 'total_price': 115796, 'trade_size': 2, 'trade_price': 57898}, {'buy_order_id': '01HVA36JE735NM0TS0R28Z8QD9', 'sell_order_id': '01HVA36D63S9TY3DNBWDK715S1', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 618, 'total_price': 123730, 'trade_size': 2, 'trade_price': 61865}], 'sell': []}
+23:25:16,899 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465], 'biomass': [126, 126, 126, 126, 126, 126], 'gas': [303, 303, 303, 303, 303, 303], 'oil': [383, 383, 383, 383, 383, 383], 'geothermal': [42, 42, 49, 52, 56, 59], 'wind': [16, 18, 19, 19, 18, 16], 'solar': [162, 175, 148, 105, 57, 9], 'hydro': [128, 128, 128, 128, 128, 128]}
+23:25:16,899 __main__ DEBUG Roi {'coal': 3.393549330797923e-05, 'uranium': 1.5044444444444443e-05, 'biomass': 1.3016528925619835e-05, 'gas': 2.7632068520234336e-05, 'oil': 3.501426168361004e-05, 'geothermal': 1.25e-05, 'wind': 8.833333333333334e-06, 'solar': 0.00010933333333333333, 'hydro': 1.065956118084287e-05}
+23:25:16,899 __main__ DEBUG Energy price: 416.8
+23:25:16,904 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:17,14 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:17,19 __main__ DEBUG Buying coal price: 22593.9, size: 52, response: "01HVA36MM34Q76HB8B9RWTZ1F5"
+23:25:17,19 __main__ DEBUG Energy price: 416.8
+23:25:17,19 __main__ DEBUG Not enough money to buy uranium plant
+23:25:17,19 __main__ DEBUG Energy price: 416.8
+23:25:17,19 __main__ DEBUG Energy price: 416.8
+23:25:17,24 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:17,373 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:17,376 __main__ DEBUG Buying gas price: 60792.9, size: 8, response: "01HVA36MQT6K5WTN29BS1C2TCR"
+23:25:17,377 __main__ DEBUG Energy price: 416.8
+23:25:17,381 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:17,471 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:17,475 __main__ DEBUG Buying oil price: 64958.25, size: 11, response: "01HVA36N2M8QYPBXPD3ANWQKR8"
+23:25:18,478 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:18,652 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:18,659 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:18,818 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:18,824 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:19,15 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:25:19,18 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:19,220 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:19,224 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:19,471 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:19,473 __main__ DEBUG Money: 26179252
+23:25:19,473 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA36MM34Q76HB8B9RWTZ1F5', 'sell_order_id': '01HVA36D5R8M76FHR60P9PVXP8', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 619, 'total_price': 43036, 'trade_size': 2, 'trade_price': 21518}, {'buy_order_id': '01HVA36MQT6K5WTN29BS1C2TCR', 'sell_order_id': '01HVA36D6154R8CY22GMA6N7KB', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 619, 'total_price': 115796, 'trade_size': 2, 'trade_price': 57898}, {'buy_order_id': '01HVA36N2M8QYPBXPD3ANWQKR8', 'sell_order_id': '01HVA36D63MFMZJ4B14EKV9AVF', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 619, 'total_price': 124956, 'trade_size': 2, 'trade_price': 62478}], 'sell': []}
+23:25:19,473 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464], 'biomass': [126, 126, 126, 126, 126, 126, 126], 'gas': [303, 303, 303, 303, 303, 303, 303], 'oil': [383, 383, 383, 383, 383, 383, 383], 'geothermal': [42, 42, 49, 52, 56, 59, 59], 'wind': [16, 18, 19, 19, 18, 16, 15], 'solar': [162, 175, 148, 105, 57, 9, 0], 'hydro': [128, 128, 128, 128, 128, 128, 127]}
+23:25:19,474 __main__ DEBUG Roi {'coal': 3.393549330797923e-05, 'uranium': 1.5040293040293039e-05, 'biomass': 1.3016528925619835e-05, 'gas': 2.7632068520234336e-05, 'oil': 3.501426168361004e-05, 'geothermal': 1.2821428571428571e-05, 'wind': 8.642857142857142e-06, 'solar': 9.37142857142857e-05, 'hydro': 1.0647664349167823e-05}
+23:25:19,474 __main__ DEBUG Energy price: 432.0
+23:25:19,477 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:19,591 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:19,594 __main__ DEBUG Buying coal price: 22593.9, size: 52, response: "01HVA36Q4W4TB1ZB5R0B7W3KH9"
+23:25:19,594 __main__ DEBUG Energy price: 432.0
+23:25:19,595 __main__ DEBUG Not enough money to buy uranium plant
+23:25:19,595 __main__ DEBUG Energy price: 432.0
+23:25:19,595 __main__ DEBUG Energy price: 432.0
+23:25:19,599 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:19,730 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:19,732 __main__ DEBUG Buying gas price: 61383.0, size: 7, response: "01HVA36Q8H9319556AXRAQ8SEK"
+23:25:19,732 __main__ DEBUG Energy price: 432.0
+23:25:19,734 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:19,992 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:19,996 __main__ DEBUG Buying oil price: 65601.90000000001, size: 10, response: "01HVA36QEFAAG16QP1CFEV9FZR"
+23:25:21,13 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:21,118 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:21,127 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:21,328 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:21,332 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:21,569 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:25:21,579 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:21,663 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:21,667 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:21,743 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:21,745 __main__ DEBUG Money: 25894340
+23:25:21,745 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA36Q4W4TB1ZB5R0B7W3KH9', 'sell_order_id': '01HVA36D5R8M76FHR60P9PVXP8', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 620, 'total_price': 43036, 'trade_size': 2, 'trade_price': 21518}, {'buy_order_id': '01HVA36Q8H9319556AXRAQ8SEK', 'sell_order_id': '01HVA36D62P7J809GVDE78D5YG', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 620, 'total_price': 116920, 'trade_size': 2, 'trade_price': 58460}, {'buy_order_id': '01HVA36QEFAAG16QP1CFEV9FZR', 'sell_order_id': '01HVA36D63MFMZJ4B14EKV9AVF', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 620, 'total_price': 124956, 'trade_size': 2, 'trade_price': 62478}], 'sell': []}
+23:25:21,745 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116, 116], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464, 1464], 'biomass': [126, 126, 126, 126, 126, 126, 126, 126], 'gas': [303, 303, 303, 303, 303, 303, 303, 303], 'oil': [383, 383, 383, 383, 383, 383, 383, 383], 'geothermal': [42, 42, 49, 52, 56, 59, 59, 59], 'wind': [16, 18, 19, 19, 18, 16, 15, 15], 'solar': [162, 175, 148, 105, 57, 9, 0, 0], 'hydro': [128, 128, 128, 128, 128, 128, 127, 127]}
+23:25:21,745 __main__ DEBUG Roi {'coal': 3.393549330797923e-05, 'uranium': 1.5037179487179487e-05, 'biomass': 1.3016528925619835e-05, 'gas': 2.7632068520234336e-05, 'oil': 3.501426168361004e-05, 'geothermal': 1.30625e-05, 'wind': 8.5e-06, 'solar': 8.2e-05, 'hydro': 1.0638741725411536e-05}
+23:25:21,745 __main__ DEBUG Energy price: 432.0
+23:25:21,748 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:21,850 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:21,851 __main__ DEBUG Buying coal price: 22565.55, size: 51, response: "01HVA36SBGGG705CW9WWTTHJEY"
+23:25:21,851 __main__ DEBUG Energy price: 432.0
+23:25:21,851 __main__ DEBUG Not enough money to buy uranium plant
+23:25:21,851 __main__ DEBUG Energy price: 432.0
+23:25:21,851 __main__ DEBUG Energy price: 432.0
+23:25:21,854 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:22,35 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:22,39 __main__ DEBUG Buying gas price: 58865.100000000006, size: 12, response: "01HVA36SH888G5BG73D926ZKF8"
+23:25:22,39 __main__ DEBUG Energy price: 432.0
+23:25:22,43 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:22,142 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:22,143 __main__ DEBUG Buying oil price: 64345.05, size: 12, response: "01HVA36SMKGFRRTXZ34JWKAKBA"
+23:25:23,156 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:23,269 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:23,276 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:23,389 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:23,397 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:23,668 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:25:23,677 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:23,883 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:23,891 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:24,59 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:24,65 __main__ DEBUG Money: 25894340
+23:25:24,65 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA36Q4W4TB1ZB5R0B7W3KH9', 'sell_order_id': '01HVA36D5R8M76FHR60P9PVXP8', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 620, 'total_price': 43036, 'trade_size': 2, 'trade_price': 21518}, {'buy_order_id': '01HVA36Q8H9319556AXRAQ8SEK', 'sell_order_id': '01HVA36D62P7J809GVDE78D5YG', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 620, 'total_price': 116920, 'trade_size': 2, 'trade_price': 58460}, {'buy_order_id': '01HVA36QEFAAG16QP1CFEV9FZR', 'sell_order_id': '01HVA36D63MFMZJ4B14EKV9AVF', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 620, 'total_price': 124956, 'trade_size': 2, 'trade_price': 62478}], 'sell': []}
+23:25:24,66 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116, 116, 116], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464, 1464, 1463], 'biomass': [126, 126, 126, 126, 126, 126, 126, 126, 126], 'gas': [303, 303, 303, 303, 303, 303, 303, 303, 302], 'oil': [383, 383, 383, 383, 383, 383, 383, 383, 384], 'geothermal': [42, 42, 49, 52, 56, 59, 59, 59, 56], 'wind': [16, 18, 19, 19, 18, 16, 15, 15, 15], 'solar': [162, 175, 148, 105, 57, 9, 0, 0, 0], 'hydro': [128, 128, 128, 128, 128, 128, 127, 127, 127]}
+23:25:24,66 __main__ DEBUG Roi {'coal': 3.393549330797923e-05, 'uranium': 1.5033618233618235e-05, 'biomass': 1.3016528925619835e-05, 'gas': 2.7621935748499745e-05, 'oil': 3.502441957791917e-05, 'geothermal': 1.3166666666666665e-05, 'wind': 8.38888888888889e-06, 'solar': 7.288888888888888e-05, 'hydro': 1.0631801906934426e-05}
+23:25:24,66 __main__ DEBUG Energy price: 453.6
+23:25:24,71 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:24,278 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:24,284 __main__ DEBUG Buying coal price: 22565.55, size: 51, response: "01HVA36VMACB5QPAX362B8E6KR"
+23:25:24,284 __main__ DEBUG Energy price: 453.6
+23:25:24,284 __main__ DEBUG Not enough money to buy uranium plant
+23:25:24,284 __main__ DEBUG Energy price: 453.6
+23:25:24,284 __main__ DEBUG Energy price: 453.6
+23:25:24,289 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:24,488 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:24,492 __main__ DEBUG Buying gas price: 58865.100000000006, size: 12, response: "01HVA36VTWE72FCR4PYW2PJC06"
+23:25:24,492 __main__ DEBUG Energy price: 453.6
+23:25:24,495 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:24,852 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:24,858 __main__ DEBUG Buying oil price: 64345.05, size: 12, response: "01HVA36W62J6MK964XZ91CM8S5"
+23:25:25,873 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:26,48 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:26,57 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:26,361 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:26,372 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:26,593 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:25:26,603 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:26,968 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:26,983 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:27,104 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:27,108 __main__ DEBUG Money: 25572570
+23:25:27,108 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA36SBGGG705CW9WWTTHJEY', 'sell_order_id': '01HVA36RWJB0AYBVH81MK5XMW7', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 621, 'total_price': 42982, 'trade_size': 2, 'trade_price': 21491}, {'buy_order_id': '01HVA36VMACB5QPAX362B8E6KR', 'sell_order_id': '01HVA36RWJB0AYBVH81MK5XMW7', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 621, 'total_price': 42982, 'trade_size': 2, 'trade_price': 21491}, {'buy_order_id': '01HVA36SH888G5BG73D926ZKF8', 'sell_order_id': '01HVA36RWTM4SGKC91NV6TD49J', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 621, 'total_price': 113244, 'trade_size': 2, 'trade_price': 56622}, {'buy_order_id': '01HVA36SMKGFRRTXZ34JWKAKBA', 'sell_order_id': '01HVA36RWW97HR8V0RTAG0W116', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 621, 'total_price': 122562, 'trade_size': 2, 'trade_price': 61281}], 'sell': []}
+23:25:27,108 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116, 116, 116, 116], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464, 1464, 1463, 1462], 'biomass': [126, 126, 126, 126, 126, 126, 126, 126, 126, 126], 'gas': [303, 303, 303, 303, 303, 303, 303, 303, 302, 302], 'oil': [383, 383, 383, 383, 383, 383, 383, 383, 384, 384], 'geothermal': [42, 42, 49, 52, 56, 59, 59, 59, 56, 52], 'wind': [16, 18, 19, 19, 18, 16, 15, 15, 15, 15], 'solar': [162, 175, 148, 105, 57, 9, 0, 0, 0, 0], 'hydro': [128, 128, 128, 128, 128, 128, 127, 127, 127, 127]}
+23:25:27,108 __main__ DEBUG Roi {'coal': 3.393549330797923e-05, 'uranium': 1.5029743589743591e-05, 'biomass': 1.3016528925619835e-05, 'gas': 2.761382953111207e-05, 'oil': 3.5032545893366487e-05, 'geothermal': 1.3150000000000001e-05, 'wind': 8.3e-06, 'solar': 6.56e-05, 'hydro': 1.0626250052152735e-05}
+23:25:27,108 __main__ DEBUG Energy price: 483.20000000000005
+23:25:27,111 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:27,291 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:27,294 __main__ DEBUG Buying coal price: 22565.55, size: 51, response: "01HVA36YN8M3WZ2E590CNWZDD5"
+23:25:27,294 __main__ DEBUG Energy price: 483.20000000000005
+23:25:27,294 __main__ DEBUG Not enough money to buy uranium plant
+23:25:27,295 __main__ DEBUG Energy price: 483.20000000000005
+23:25:27,295 __main__ DEBUG Energy price: 483.20000000000005
+23:25:27,298 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:27,408 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:27,412 __main__ DEBUG Buying gas price: 59453.100000000006, size: 11, response: "01HVA36YS4FJAGFF1XMJ9ZPF8Z"
+23:25:27,412 __main__ DEBUG Energy price: 483.20000000000005
+23:25:27,416 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:27,622 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:27,627 __main__ DEBUG Buying oil price: 64987.65, size: 11, response: "01HVA36YW1PCV8M5QY9X589PC5"
+23:25:28,641 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:28,911 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:28,920 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:29,101 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:29,111 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:29,302 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:25:29,309 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:29,396 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:29,403 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:29,614 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:29,620 __main__ DEBUG Money: 25292558
+23:25:29,621 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA36YN8M3WZ2E590CNWZDD5', 'sell_order_id': '01HVA36RWJB0AYBVH81MK5XMW7', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 622, 'total_price': 42982, 'trade_size': 2, 'trade_price': 21491}, {'buy_order_id': '01HVA36VTWE72FCR4PYW2PJC06', 'sell_order_id': '01HVA36RWTM4SGKC91NV6TD49J', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 622, 'total_price': 113244, 'trade_size': 2, 'trade_price': 56622}, {'buy_order_id': '01HVA36W62J6MK964XZ91CM8S5', 'sell_order_id': '01HVA36RWXYVPVVPG0M5M0FGN4', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 622, 'total_price': 123786, 'trade_size': 2, 'trade_price': 61893}], 'sell': []}
+23:25:29,621 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464, 1464, 1463, 1462, 1462], 'biomass': [126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126], 'gas': [303, 303, 303, 303, 303, 303, 303, 303, 302, 302, 302], 'oil': [383, 383, 383, 383, 383, 383, 383, 383, 384, 384, 384], 'geothermal': [42, 42, 49, 52, 56, 59, 59, 59, 56, 52, 52], 'wind': [16, 18, 19, 19, 18, 16, 15, 15, 15, 15, 15], 'solar': [162, 175, 148, 105, 57, 9, 0, 0, 0, 0, 0], 'hydro': [128, 128, 128, 128, 128, 128, 127, 127, 127, 127, 127]}
+23:25:29,621 __main__ DEBUG Roi {'coal': 3.393549330797923e-05, 'uranium': 1.5026573426573426e-05, 'biomass': 1.3016528925619835e-05, 'gas': 2.7607197171431246e-05, 'oil': 3.5039194696914286e-05, 'geothermal': 1.3136363636363636e-05, 'wind': 8.227272727272726e-06, 'solar': 5.963636363636363e-05, 'hydro': 1.0621707625513172e-05}
+23:25:29,621 __main__ DEBUG Energy price: 490.40000000000003
+23:25:29,626 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:29,767 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:29,773 __main__ DEBUG Buying coal price: 22565.55, size: 51, response: "01HVA37124DWPGE4E8SP1ZA5R3"
+23:25:29,774 __main__ DEBUG Energy price: 490.40000000000003
+23:25:29,774 __main__ DEBUG Not enough money to buy uranium plant
+23:25:29,774 __main__ DEBUG Energy price: 490.40000000000003
+23:25:29,774 __main__ DEBUG Energy price: 490.40000000000003
+23:25:29,777 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:30,124 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:30,129 __main__ DEBUG Buying gas price: 60630.15, size: 8, response: "01HVA371AZ77687JECNGSQFS0Z"
+23:25:30,129 __main__ DEBUG Energy price: 490.40000000000003
+23:25:30,134 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:30,351 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:30,356 __main__ DEBUG Buying oil price: 64987.65, size: 11, response: "01HVA371HDN44R02B8NKQV0Q99"
+23:25:31,362 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:31,480 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:31,487 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:31,628 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:31,636 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:31,723 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:25:31,733 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:31,852 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:31,861 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:32,125 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:32,132 __main__ DEBUG Money: 24769245
+23:25:32,132 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA37124DWPGE4E8SP1ZA5R3', 'sell_order_id': '01HVA36RWJB0AYBVH81MK5XMW7', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 623, 'total_price': 42982, 'trade_size': 2, 'trade_price': 21491}, {'buy_order_id': '01HVA36YS4FJAGFF1XMJ9ZPF8Z', 'sell_order_id': '01HVA36RWVJCCQNQ0T54T2CWW6', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 623, 'total_price': 115486, 'trade_size': 2, 'trade_price': 57743}, {'buy_order_id': '01HVA371AZ77687JECNGSQFS0Z', 'sell_order_id': '01HVA36RWVJCCQNQ0T54T2CWW6', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 623, 'total_price': 57743, 'trade_size': 1, 'trade_price': 57743}, {'buy_order_id': '01HVA371AZ77687JECNGSQFS0Z', 'sell_order_id': '01HVA36RWWW5W35QZ7WGHDBBQV', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 623, 'total_price': 58304, 'trade_size': 1, 'trade_price': 58304}, {'buy_order_id': '01HVA36YW1PCV8M5QY9X589PC5', 'sell_order_id': '01HVA36RWXYVPVVPG0M5M0FGN4', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 623, 'total_price': 123786, 'trade_size': 2, 'trade_price': 61893}, {'buy_order_id': '01HVA371HDN44R02B8NKQV0Q99', 'sell_order_id': '01HVA36RWX9PJCFV46NMZW0BPA', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 623, 'total_price': 125012, 'trade_size': 2, 'trade_price': 62506}], 'sell': []}
+23:25:32,132 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464, 1464, 1463, 1462, 1462, 1461], 'biomass': [126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126], 'gas': [303, 303, 303, 303, 303, 303, 303, 303, 302, 302, 302, 302], 'oil': [383, 383, 383, 383, 383, 383, 383, 383, 384, 384, 384, 384], 'geothermal': [42, 42, 49, 52, 56, 59, 59, 59, 56, 52, 52, 49], 'wind': [16, 18, 19, 19, 18, 16, 15, 15, 15, 15, 15, 15], 'solar': [162, 175, 148, 105, 57, 9, 0, 0, 0, 0, 0, 0], 'hydro': [128, 128, 128, 128, 128, 128, 127, 127, 127, 127, 127, 127]}
+23:25:32,132 __main__ DEBUG Roi {'coal': 3.393549330797923e-05, 'uranium': 1.5023076923076924e-05, 'biomass': 1.3016528925619835e-05, 'gas': 2.7601670205030557e-05, 'oil': 3.504473536653746e-05, 'geothermal': 1.30625e-05, 'wind': 8.166666666666666e-06, 'solar': 5.466666666666666e-05, 'hydro': 1.0617922269980202e-05}
+23:25:32,133 __main__ DEBUG Energy price: 522.4
+23:25:32,138 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:32,327 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:32,332 __main__ DEBUG Buying coal price: 22565.55, size: 51, response: "01HVA373FMF4AAJV7QXYCN5FRC"
+23:25:32,332 __main__ DEBUG Energy price: 522.4
+23:25:32,332 __main__ DEBUG Not enough money to buy uranium plant
+23:25:32,332 __main__ DEBUG Energy price: 522.4
+23:25:32,336 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:32,531 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/buy?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:32,536 __main__ DEBUG Buying biomass plant, response: {"successful":true,"message":"Operation done successfully"}
+23:25:32,541 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:32,752 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/on?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:32,758 __main__ DEBUG Turning on biomass plant, response: {"successful":true,"message":"Operation done successfully"}
+23:25:32,762 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:32,941 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 400 44
+23:25:32,947 __main__ DEBUG Buying biomass price: 62067.600000000006, size: 100, response: {"detail":"Size (0) must be greater than 0"}
+23:25:32,947 __main__ DEBUG Energy price: 522.4
+23:25:32,951 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:33,282 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:33,288 __main__ DEBUG Buying gas price: 61219.200000000004, size: 7, response: "01HVA374DS7G1REEN1R54X60Z2"
+23:25:33,288 __main__ DEBUG Energy price: 522.4
+23:25:33,292 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:33,497 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:33,502 __main__ DEBUG Buying oil price: 65631.3, size: 10, response: "01HVA374M5KR0MFFMY14CXZXMK"
+23:25:34,515 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:34,754 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:34,764 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:34,872 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:34,882 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:35,202 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:25:35,211 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:35,327 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:35,337 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:35,595 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:35,601 __main__ DEBUG Money: 15046263
+23:25:35,601 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA373FMF4AAJV7QXYCN5FRC', 'sell_order_id': '01HVA36RWJB0AYBVH81MK5XMW7', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 624, 'total_price': 42982, 'trade_size': 2, 'trade_price': 21491}], 'sell': []}
+23:25:35,601 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464, 1464, 1463, 1462, 1462, 1461, 1460], 'biomass': [126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126], 'gas': [303, 303, 303, 303, 303, 303, 303, 303, 302, 302, 302, 302, 302], 'oil': [383, 383, 383, 383, 383, 383, 383, 383, 384, 384, 384, 384, 384], 'geothermal': [42, 42, 49, 52, 56, 59, 59, 59, 56, 52, 52, 49, 49], 'wind': [16, 18, 19, 19, 18, 16, 15, 15, 15, 15, 15, 15, 15], 'solar': [162, 175, 148, 105, 57, 9, 0, 0, 0, 0, 0, 0, 0], 'hydro': [128, 128, 128, 128, 128, 128, 127, 127, 127, 127, 127, 127, 127]}
+23:25:35,601 __main__ DEBUG Roi {'coal': 3.393549330797923e-05, 'uranium': 1.5019329388560159e-05, 'biomass': 1.1519052146566226e-05, 'gas': 2.7596993541153054e-05, 'oil': 3.5049423625449365e-05, 'geothermal': 1.3e-05, 'wind': 8.115384615384615e-06, 'solar': 5.046153846153846e-05, 'hydro': 1.061471927683692e-05}
+23:25:35,601 __main__ DEBUG Energy price: 520.0
+23:25:35,606 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:35,812 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:35,818 __main__ DEBUG Buying coal price: 22538.25, size: 51, response: "01HVA376W8AX8EKCQ1RNZ0EHS5"
+23:25:35,818 __main__ DEBUG Energy price: 520.0
+23:25:35,818 __main__ DEBUG Not enough money to buy uranium plant
+23:25:35,818 __main__ DEBUG Energy price: 520.0
+23:25:35,822 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:35,925 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:35,928 __main__ DEBUG Buying biomass price: 62121.15, size: 100, response: "01HVA3772ZSCGFCD33F85CC1CB"
+23:25:35,928 __main__ DEBUG Energy price: 520.0
+23:25:35,930 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:36,249 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:36,258 __main__ DEBUG Buying gas price: 58707.600000000006, size: 12, response: "01HVA37766TAEWSFZTXJAAVEEK"
+23:25:36,258 __main__ DEBUG Energy price: 520.0
+23:25:36,263 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:36,363 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:36,368 __main__ DEBUG Buying oil price: 64374.450000000004, size: 12, response: "01HVA377H02A3SAGBG6KCGJPN1"
+23:25:37,378 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:37,588 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:37,598 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:37,891 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:37,900 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:38,100 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:25:38,109 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:38,347 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:38,355 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:38,473 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:38,479 __main__ DEBUG Money: 14524557
+23:25:38,479 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA376W8AX8EKCQ1RNZ0EHS5', 'sell_order_id': '01HVA374KM40TEH3QW27DYZ7N2', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 625, 'total_price': 42930, 'trade_size': 2, 'trade_price': 21465}, {'buy_order_id': '01HVA3772ZSCGFCD33F85CC1CB', 'sell_order_id': '01HVA374KT422VXAS1AYBFC0Y0', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'biomass', 'tick': 625, 'total_price': 118326, 'trade_size': 2, 'trade_price': 59163}, {'buy_order_id': '01HVA374DS7G1REEN1R54X60Z2', 'sell_order_id': '01HVA374KXG8ZDJT1ZET5C4T6S', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 625, 'total_price': 122438, 'trade_size': 2, 'trade_price': 61219}, {'buy_order_id': '01HVA37766TAEWSFZTXJAAVEEK', 'sell_order_id': '01HVA374KXJ5HF1G8N2GPBY24W', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 625, 'total_price': 112942, 'trade_size': 2, 'trade_price': 56471}, {'buy_order_id': '01HVA374M5KR0MFFMY14CXZXMK', 'sell_order_id': '01HVA374M0DVM9F4HVYQ8H7PGY', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 625, 'total_price': 125070, 'trade_size': 2, 'trade_price': 62535}], 'sell': []}
+23:25:38,480 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464, 1464, 1463, 1462, 1462, 1461, 1460, 1460], 'biomass': [126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126], 'gas': [303, 303, 303, 303, 303, 303, 303, 303, 302, 302, 302, 302, 302, 302], 'oil': [383, 383, 383, 383, 383, 383, 383, 383, 384, 384, 384, 384, 384, 384], 'geothermal': [42, 42, 49, 52, 56, 59, 59, 59, 56, 52, 52, 49, 49, 49], 'wind': [16, 18, 19, 19, 18, 16, 15, 15, 15, 15, 15, 15, 15, 15], 'solar': [162, 175, 148, 105, 57, 9, 0, 0, 0, 0, 0, 0, 0, 0], 'hydro': [128, 128, 128, 128, 128, 128, 127, 127, 127, 127, 127, 127, 127, 127]}
+23:25:38,480 __main__ DEBUG Roi {'coal': 3.393549330797923e-05, 'uranium': 1.5016117216117217e-05, 'biomass': 1.1519052146566226e-05, 'gas': 2.7592984972115188e-05, 'oil': 3.5053442133088155e-05, 'geothermal': 1.294642857142857e-05, 'wind': 8.07142857142857e-06, 'solar': 4.685714285714285e-05, 'hydro': 1.0611973854142678e-05}
+23:25:38,480 __main__ DEBUG Energy price: 516.0
+23:25:38,484 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:38,740 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:38,748 __main__ DEBUG Buying coal price: 22538.25, size: 51, response: "01HVA379P1D8BNDE63HS6WSYE0"
+23:25:38,748 __main__ DEBUG Energy price: 516.0
+23:25:38,749 __main__ DEBUG Not enough money to buy uranium plant
+23:25:38,749 __main__ DEBUG Energy price: 516.0
+23:25:38,752 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:38,937 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:38,944 __main__ DEBUG Buying biomass price: 62121.15, size: 100, response: "01HVA379YEC96V82F5Y5M1P3QH"
+23:25:38,944 __main__ DEBUG Energy price: 516.0
+23:25:38,950 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:39,165 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:39,170 __main__ DEBUG Buying gas price: 59294.55, size: 11, response: "01HVA37A5HQGQM41APJZKHVVNJ"
+23:25:39,171 __main__ DEBUG Energy price: 516.0
+23:25:39,175 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:39,447 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:39,452 __main__ DEBUG Buying oil price: 65661.75, size: 10, response: "01HVA37AH6GCXW0FRN9JEGCNSP"
+23:25:40,465 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:40,554 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:40,563 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:40,838 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:40,849 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:41,56 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:25:41,67 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:41,173 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:41,183 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:41,495 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:41,498 __main__ DEBUG Money: 14123053
+23:25:41,498 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA379P1D8BNDE63HS6WSYE0', 'sell_order_id': '01HVA374KM40TEH3QW27DYZ7N2', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 626, 'total_price': 42930, 'trade_size': 2, 'trade_price': 21465}, {'buy_order_id': '01HVA379YEC96V82F5Y5M1P3QH', 'sell_order_id': '01HVA374KT422VXAS1AYBFC0Y0', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'biomass', 'tick': 626, 'total_price': 118326, 'trade_size': 2, 'trade_price': 59163}, {'buy_order_id': '01HVA37A5HQGQM41APJZKHVVNJ', 'sell_order_id': '01HVA374KY9X18DJ15GR70BJTB', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 626, 'total_price': 115178, 'trade_size': 2, 'trade_price': 57589}, {'buy_order_id': '01HVA377H02A3SAGBG6KCGJPN1', 'sell_order_id': '01HVA374M0DVM9F4HVYQ8H7PGY', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 626, 'total_price': 125070, 'trade_size': 2, 'trade_price': 62535}], 'sell': []}
+23:25:41,498 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464, 1464, 1463, 1462, 1462, 1461, 1460, 1460, 1459], 'biomass': [126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126], 'gas': [303, 303, 303, 303, 303, 303, 303, 303, 302, 302, 302, 302, 302, 302, 302], 'oil': [383, 383, 383, 383, 383, 383, 383, 383, 384, 384, 384, 384, 384, 384, 384], 'geothermal': [42, 42, 49, 52, 56, 59, 59, 59, 56, 52, 52, 49, 49, 49, 49], 'wind': [16, 18, 19, 19, 18, 16, 15, 15, 15, 15, 15, 15, 15, 15, 15], 'solar': [162, 175, 148, 105, 57, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'hydro': [128, 128, 128, 128, 128, 128, 127, 127, 127, 127, 127, 127, 127, 127, 127]}
+23:25:41,498 __main__ DEBUG Roi {'coal': 3.393549330797923e-05, 'uranium': 1.5012649572649573e-05, 'biomass': 1.1519052146566226e-05, 'gas': 2.758951087894905e-05, 'oil': 3.505692483970843e-05, 'geothermal': 1.29e-05, 'wind': 8.033333333333333e-06, 'solar': 4.373333333333334e-05, 'hydro': 1.060959448780767e-05}
+23:25:41,498 __main__ DEBUG Energy price: 508.0
+23:25:41,508 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:41,694 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:41,699 __main__ DEBUG Buying coal price: 22538.25, size: 51, response: "01HVA37CMJQMN15A6ZJTS34QZZ"
+23:25:41,699 __main__ DEBUG Energy price: 508.0
+23:25:41,699 __main__ DEBUG Not enough money to buy uranium plant
+23:25:41,699 __main__ DEBUG Energy price: 508.0
+23:25:41,703 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:42,68 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:42,74 __main__ DEBUG Buying biomass price: 62121.15, size: 100, response: "01HVA37D09K4ZYP9QWQQ3FTRY5"
+23:25:42,74 __main__ DEBUG Energy price: 508.0
+23:25:42,78 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:42,276 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:42,282 __main__ DEBUG Buying gas price: 60468.450000000004, size: 8, response: "01HVA37D6GRGEKMRAHA69NKTM5"
+23:25:42,282 __main__ DEBUG Energy price: 508.0
+23:25:42,287 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:42,378 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:42,383 __main__ DEBUG Buying oil price: 65661.75, size: 10, response: "01HVA37DCYCGE2MFTP7YVF990K"
+23:25:43,397 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:43,668 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:43,680 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:43,862 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:43,869 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:44,66 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:25:44,76 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:44,308 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:44,319 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:44,639 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:44,646 __main__ DEBUG Money: 13721549
+23:25:44,646 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA37CMJQMN15A6ZJTS34QZZ', 'sell_order_id': '01HVA374KM40TEH3QW27DYZ7N2', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 627, 'total_price': 42930, 'trade_size': 2, 'trade_price': 21465}, {'buy_order_id': '01HVA37D09K4ZYP9QWQQ3FTRY5', 'sell_order_id': '01HVA374KT422VXAS1AYBFC0Y0', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'biomass', 'tick': 627, 'total_price': 118326, 'trade_size': 2, 'trade_price': 59163}, {'buy_order_id': '01HVA37D6GRGEKMRAHA69NKTM5', 'sell_order_id': '01HVA374KY9X18DJ15GR70BJTB', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 627, 'total_price': 115178, 'trade_size': 2, 'trade_price': 57589}, {'buy_order_id': '01HVA37AH6GCXW0FRN9JEGCNSP', 'sell_order_id': '01HVA374M0DVM9F4HVYQ8H7PGY', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 627, 'total_price': 125070, 'trade_size': 2, 'trade_price': 62535}], 'sell': []}
+23:25:44,646 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464, 1464, 1463, 1462, 1462, 1461, 1460, 1460, 1459, 1459], 'biomass': [126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126], 'gas': [303, 303, 303, 303, 303, 303, 303, 303, 302, 302, 302, 302, 302, 302, 302, 302], 'oil': [383, 383, 383, 383, 383, 383, 383, 383, 384, 384, 384, 384, 384, 384, 384, 385], 'geothermal': [42, 42, 49, 52, 56, 59, 59, 59, 56, 52, 52, 49, 49, 49, 49, 52], 'wind': [16, 18, 19, 19, 18, 16, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15], 'solar': [162, 175, 148, 105, 57, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'hydro': [128, 128, 128, 128, 128, 128, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127]}
+23:25:44,646 __main__ DEBUG Roi {'coal': 3.393549330797923e-05, 'uranium': 1.5009615384615385e-05, 'biomass': 1.1519052146566226e-05, 'gas': 2.7586471047428666e-05, 'oil': 3.5065686023550064e-05, 'geothermal': 1.290625e-05, 'wind': 8e-06, 'solar': 4.1e-05, 'hydro': 1.0607512542264536e-05}
+23:25:44,646 __main__ DEBUG Energy price: 504.8
+23:25:44,650 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:44,833 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:44,838 __main__ DEBUG Buying coal price: 22538.25, size: 51, response: "01HVA37FPNSG7ZCG9QPBZMD5ZM"
+23:25:44,838 __main__ DEBUG Energy price: 504.8
+23:25:44,838 __main__ DEBUG Not enough money to buy uranium plant
+23:25:44,838 __main__ DEBUG Energy price: 504.8
+23:25:44,842 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:44,927 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:44,932 __main__ DEBUG Buying biomass price: 62121.15, size: 100, response: "01HVA37FWNEB4KMB1ZJBNY04P7"
+23:25:44,932 __main__ DEBUG Energy price: 504.8
+23:25:44,936 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:45,230 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:45,236 __main__ DEBUG Buying gas price: 60468.450000000004, size: 8, response: "01HVA37G2CFV3KEE7A0MDBWAFE"
+23:25:45,236 __main__ DEBUG Energy price: 504.8
+23:25:45,240 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:45,450 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:45,456 __main__ DEBUG Buying oil price: 66305.40000000001, size: 8, response: "01HVA37G96V8PMHQPFJ6SR6VX2"
+23:25:46,470 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:46,734 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:46,743 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:46,868 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:46,877 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:47,130 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:25:47,139 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:47,314 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:47,324 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:47,530 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:47,538 __main__ DEBUG Money: 13317701
+23:25:47,538 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA37FPNSG7ZCG9QPBZMD5ZM', 'sell_order_id': '01HVA374KM40TEH3QW27DYZ7N2', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 628, 'total_price': 42930, 'trade_size': 2, 'trade_price': 21465}, {'buy_order_id': '01HVA37FWNEB4KMB1ZJBNY04P7', 'sell_order_id': '01HVA374KT422VXAS1AYBFC0Y0', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'biomass', 'tick': 628, 'total_price': 118326, 'trade_size': 2, 'trade_price': 59163}, {'buy_order_id': '01HVA37G2CFV3KEE7A0MDBWAFE', 'sell_order_id': '01HVA374KZTPR1PCB6MZ7VQ01A', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 628, 'total_price': 116296, 'trade_size': 2, 'trade_price': 58148}, {'buy_order_id': '01HVA37DCYCGE2MFTP7YVF990K', 'sell_order_id': '01HVA374M1YGGTG9645G7YM3P0', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 628, 'total_price': 126296, 'trade_size': 2, 'trade_price': 63148}], 'sell': []}
+23:25:47,539 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464, 1464, 1463, 1462, 1462, 1461, 1460, 1460, 1459, 1459, 1458], 'biomass': [126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126], 'gas': [303, 303, 303, 303, 303, 303, 303, 303, 302, 302, 302, 302, 302, 302, 302, 302, 301], 'oil': [383, 383, 383, 383, 383, 383, 383, 383, 384, 384, 384, 384, 384, 384, 384, 385, 385], 'geothermal': [42, 42, 49, 52, 56, 59, 59, 59, 56, 52, 52, 49, 49, 49, 49, 52, 52], 'wind': [16, 18, 19, 19, 18, 16, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15], 'solar': [162, 175, 148, 105, 57, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'hydro': [128, 128, 128, 128, 128, 128, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127]}
+23:25:47,539 __main__ DEBUG Roi {'coal': 3.393549330797923e-05, 'uranium': 1.5006334841628959e-05, 'biomass': 1.1519052146566226e-05, 'gas': 2.757842443458061e-05, 'oil': 3.507341647988091e-05, 'geothermal': 1.2911764705882352e-05, 'wind': 7.970588235294118e-06, 'solar': 3.858823529411764e-05, 'hydro': 1.0605675531491183e-05}
+23:25:47,539 __main__ DEBUG Energy price: 482.40000000000003
+23:25:47,543 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:47,782 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:47,787 __main__ DEBUG Buying coal price: 22509.9, size: 51, response: "01HVA37JHS9PW8ZCSNM3NZ1BR3"
+23:25:47,788 __main__ DEBUG Energy price: 482.40000000000003
+23:25:47,788 __main__ DEBUG Not enough money to buy uranium plant
+23:25:47,788 __main__ DEBUG Energy price: 482.40000000000003
+23:25:47,788 __main__ DEBUG Energy price: 482.40000000000003
+23:25:47,793 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:47,915 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:47,918 __main__ DEBUG Buying gas price: 58550.100000000006, size: 12, response: "01HVA37JSYC1FMG606FA43NC6A"
+23:25:47,919 __main__ DEBUG Energy price: 482.40000000000003
+23:25:47,922 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:48,176 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:48,181 __main__ DEBUG Buying oil price: 64402.8, size: 12, response: "01HVA37JXPTF277T1AAYKNNJM0"
+23:25:49,196 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:49,339 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:49,348 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:49,561 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:49,571 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:49,881 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:25:49,889 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:49,992 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:50,0 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:50,116 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:50,121 __main__ DEBUG Money: 12904453
+23:25:50,121 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA37JHS9PW8ZCSNM3NZ1BR3', 'sell_order_id': '01HVA37G9ZDCWJERX05Y753ZN5', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 629, 'total_price': 42876, 'trade_size': 2, 'trade_price': 21438}, {'buy_order_id': '01HVA37JSYC1FMG606FA43NC6A', 'sell_order_id': '01HVA37GA7H3MVSXW1138387KH', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 629, 'total_price': 112638, 'trade_size': 2, 'trade_price': 56319}, {'buy_order_id': '01HVA37G96V8PMHQPFJ6SR6VX2', 'sell_order_id': '01HVA37GA9XRF4XQM55Y6F4TXQ', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 629, 'total_price': 132610, 'trade_size': 2, 'trade_price': 66305}, {'buy_order_id': '01HVA37JXPTF277T1AAYKNNJM0', 'sell_order_id': '01HVA37GAAVD5VTSKFQVVBYTCG', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 629, 'total_price': 125124, 'trade_size': 2, 'trade_price': 62562}], 'sell': []}
+23:25:50,121 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464, 1464, 1463, 1462, 1462, 1461, 1460, 1460, 1459, 1459, 1458, 1458], 'biomass': [126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 127], 'gas': [303, 303, 303, 303, 303, 303, 303, 303, 302, 302, 302, 302, 302, 302, 302, 302, 301, 301], 'oil': [383, 383, 383, 383, 383, 383, 383, 383, 384, 384, 384, 384, 384, 384, 384, 385, 385, 385], 'geothermal': [42, 42, 49, 52, 56, 59, 59, 59, 56, 52, 52, 49, 49, 49, 49, 52, 52, 52], 'wind': [16, 18, 19, 19, 18, 16, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15], 'solar': [162, 175, 148, 105, 57, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'hydro': [128, 128, 128, 128, 128, 128, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 128]}
+23:25:50,121 __main__ DEBUG Roi {'coal': 3.393549330797923e-05, 'uranium': 1.5003418803418803e-05, 'biomass': 1.1524131093720796e-05, 'gas': 2.7571271889826775e-05, 'oil': 3.5080287996619455e-05, 'geothermal': 1.2916666666666666e-05, 'wind': 7.944444444444445e-06, 'solar': 3.644444444444444e-05, 'hydro': 1.0608669178677388e-05}
+23:25:50,122 __main__ DEBUG Energy price: 471.20000000000005
+23:25:50,126 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:50,318 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:50,323 __main__ DEBUG Buying coal price: 22509.9, size: 51, response: "01HVA37N53BGVVDG97GHVCQD1J"
+23:25:50,323 __main__ DEBUG Energy price: 471.20000000000005
+23:25:50,323 __main__ DEBUG Not enough money to buy uranium plant
+23:25:50,324 __main__ DEBUG Energy price: 471.20000000000005
+23:25:50,324 __main__ DEBUG Energy price: 471.20000000000005
+23:25:50,329 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:50,423 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:50,428 __main__ DEBUG Buying gas price: 59134.950000000004, size: 11, response: "01HVA37N88HZE1KKCE70SH66BK"
+23:25:50,428 __main__ DEBUG Energy price: 471.20000000000005
+23:25:50,432 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:50,657 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:50,662 __main__ DEBUG Buying oil price: 65690.1, size: 10, response: "01HVA37NC8MENAHB9ZZS9FT81B"
+23:25:51,673 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:51,978 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:51,986 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:52,108 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:52,118 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:52,237 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:25:52,247 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:52,424 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:52,434 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:52,633 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:52,638 __main__ DEBUG Money: 12621585
+23:25:52,638 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA37N53BGVVDG97GHVCQD1J', 'sell_order_id': '01HVA37G9ZDCWJERX05Y753ZN5', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 630, 'total_price': 42876, 'trade_size': 2, 'trade_price': 21438}, {'buy_order_id': '01HVA37N88HZE1KKCE70SH66BK', 'sell_order_id': '01HVA37GA8MYWB1PGBNYZ2GQF1', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 630, 'total_price': 114868, 'trade_size': 2, 'trade_price': 57434}, {'buy_order_id': '01HVA37NC8MENAHB9ZZS9FT81B', 'sell_order_id': '01HVA37GAAVD5VTSKFQVVBYTCG', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 630, 'total_price': 125124, 'trade_size': 2, 'trade_price': 62562}], 'sell': []}
+23:25:52,638 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 117], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464, 1464, 1463, 1462, 1462, 1461, 1460, 1460, 1459, 1459, 1458, 1458, 1458], 'biomass': [126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 127, 127], 'gas': [303, 303, 303, 303, 303, 303, 303, 303, 302, 302, 302, 302, 302, 302, 302, 302, 301, 301, 301], 'oil': [383, 383, 383, 383, 383, 383, 383, 383, 384, 384, 384, 384, 384, 384, 384, 385, 385, 385, 385], 'geothermal': [42, 42, 49, 52, 56, 59, 59, 59, 56, 52, 52, 49, 49, 49, 49, 52, 52, 52, 56], 'wind': [16, 18, 19, 19, 18, 16, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15], 'solar': [162, 175, 148, 105, 57, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'hydro': [128, 128, 128, 128, 128, 128, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 128, 127]}
+23:25:52,638 __main__ DEBUG Roi {'coal': 3.3950890537247824e-05, 'uranium': 1.500080971659919e-05, 'biomass': 1.1528675414859096e-05, 'gas': 2.7564872244520717e-05, 'oil': 3.508643619580656e-05, 'geothermal': 1.2973684210526316e-05, 'wind': 7.921052631578948e-06, 'solar': 3.452631578947369e-05, 'hydro': 1.0606964661858448e-05}
+23:25:52,638 __main__ DEBUG Energy price: 458.40000000000003
+23:25:52,642 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:52,844 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:52,849 __main__ DEBUG Buying coal price: 22509.9, size: 51, response: "01HVA37QGY7T6B7AJXX284JZR0"
+23:25:52,849 __main__ DEBUG Energy price: 458.40000000000003
+23:25:52,849 __main__ DEBUG Not enough money to buy uranium plant
+23:25:52,849 __main__ DEBUG Energy price: 458.40000000000003
+23:25:52,849 __main__ DEBUG Energy price: 458.40000000000003
+23:25:52,853 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:53,85 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:53,92 __main__ DEBUG Buying gas price: 60305.700000000004, size: 8, response: "01HVA37QVG29V2CF7YW3H2A3JH"
+23:25:53,92 __main__ DEBUG Energy price: 458.40000000000003
+23:25:53,99 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:53,290 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:53,295 __main__ DEBUG Buying oil price: 65690.1, size: 10, response: "01HVA37QYZXF9GHGFQ52KCYJWZ"
+23:25:54,310 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:54,649 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:54,661 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:54,855 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:54,866 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:55,124 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:25:55,136 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:55,327 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:55,338 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:55,674 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:55,679 __main__ DEBUG Money: 12337601
+23:25:55,680 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA37QGY7T6B7AJXX284JZR0', 'sell_order_id': '01HVA37G9ZDCWJERX05Y753ZN5', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 631, 'total_price': 42876, 'trade_size': 2, 'trade_price': 21438}, {'buy_order_id': '01HVA37QVG29V2CF7YW3H2A3JH', 'sell_order_id': '01HVA37GA90C9GPMD7WTEVYWQV', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 631, 'total_price': 115984, 'trade_size': 2, 'trade_price': 57992}, {'buy_order_id': '01HVA37QYZXF9GHGFQ52KCYJWZ', 'sell_order_id': '01HVA37GAAVD5VTSKFQVVBYTCG', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 631, 'total_price': 125124, 'trade_size': 2, 'trade_price': 62562}], 'sell': []}
+23:25:55,680 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 117, 117], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464, 1464, 1463, 1462, 1462, 1461, 1460, 1460, 1459, 1459, 1458, 1458, 1458, 1458], 'biomass': [126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 127, 127, 127], 'gas': [303, 303, 303, 303, 303, 303, 303, 303, 302, 302, 302, 302, 302, 302, 302, 302, 301, 301, 301, 301], 'oil': [383, 383, 383, 383, 383, 383, 383, 383, 384, 384, 384, 384, 384, 384, 384, 385, 385, 385, 385, 385], 'geothermal': [42, 42, 49, 52, 56, 59, 59, 59, 56, 52, 52, 49, 49, 49, 49, 52, 52, 52, 56, 56], 'wind': [16, 18, 19, 19, 18, 16, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15], 'solar': [162, 175, 148, 105, 57, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'hydro': [128, 128, 128, 128, 128, 128, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 128, 127, 127]}
+23:25:55,680 __main__ DEBUG Roi {'coal': 3.396474804358956e-05, 'uranium': 1.4998461538461537e-05, 'biomass': 1.1532765303883566e-05, 'gas': 2.7559112563745266e-05, 'oil': 3.5091969575074965e-05, 'geothermal': 1.3025e-05, 'wind': 7.9e-06, 'solar': 3.28e-05, 'hydro': 1.0605430596721402e-05}
+23:25:55,680 __main__ DEBUG Energy price: 444.0
+23:25:55,684 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:55,881 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:55,886 __main__ DEBUG Buying coal price: 22509.9, size: 51, response: "01HVA37TFSR18QBXBBMT1TYV8P"
+23:25:55,886 __main__ DEBUG Energy price: 444.0
+23:25:55,886 __main__ DEBUG Not enough money to buy uranium plant
+23:25:55,887 __main__ DEBUG Energy price: 444.0
+23:25:55,887 __main__ DEBUG Energy price: 444.0
+23:25:55,891 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:55,982 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:55,988 __main__ DEBUG Buying gas price: 60891.600000000006, size: 7, response: "01HVA37TP0S9G4RWGFV8RCBKFD"
+23:25:55,988 __main__ DEBUG Energy price: 444.0
+23:25:55,991 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:56,251 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:25:56,258 __main__ DEBUG Buying oil price: 66334.8, size: 8, response: "01HVA37TYGNG7V4AMQEGTENQPN"
+23:25:57,271 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:57,397 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:57,406 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:57,518 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:57,529 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:57,731 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:25:57,742 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:57,963 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:57,970 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:58,73 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:58,80 __main__ DEBUG Money: 12052389
+23:25:58,80 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA37TFSR18QBXBBMT1TYV8P', 'sell_order_id': '01HVA37G9ZDCWJERX05Y753ZN5', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 632, 'total_price': 42876, 'trade_size': 2, 'trade_price': 21438}, {'buy_order_id': '01HVA37TP0S9G4RWGFV8RCBKFD', 'sell_order_id': '01HVA37GA90C9GPMD7WTEVYWQV', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 632, 'total_price': 115984, 'trade_size': 2, 'trade_price': 57992}, {'buy_order_id': '01HVA37TYGNG7V4AMQEGTENQPN', 'sell_order_id': '01HVA37GABR908J4A0FK95K4FS', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 632, 'total_price': 126352, 'trade_size': 2, 'trade_price': 63176}], 'sell': []}
+23:25:58,80 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 117, 117, 117], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464, 1464, 1463, 1462, 1462, 1461, 1460, 1460, 1459, 1459, 1458, 1458, 1458, 1458, 1458], 'biomass': [126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 127, 127, 127, 127], 'gas': [303, 303, 303, 303, 303, 303, 303, 303, 302, 302, 302, 302, 302, 302, 302, 302, 301, 301, 301, 301, 301], 'oil': [383, 383, 383, 383, 383, 383, 383, 383, 384, 384, 384, 384, 384, 384, 384, 385, 385, 385, 385, 385, 385], 'geothermal': [42, 42, 49, 52, 56, 59, 59, 59, 56, 52, 52, 49, 49, 49, 49, 52, 52, 52, 56, 56, 56], 'wind': [16, 18, 19, 19, 18, 16, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15], 'solar': [162, 175, 148, 105, 57, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'hydro': [128, 128, 128, 128, 128, 128, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 128, 127, 127, 127]}
+23:25:58,80 __main__ DEBUG Roi {'coal': 3.397728578742255e-05, 'uranium': 1.4996336996336996e-05, 'biomass': 1.153646567966761e-05, 'gas': 2.755390142399605e-05, 'oil': 3.5096975965841615e-05, 'geothermal': 1.3071428571428572e-05, 'wind': 7.880952380952382e-06, 'solar': 3.123809523809524e-05, 'hydro': 1.0604042633025979e-05}
+23:25:58,80 __main__ DEBUG Energy price: 444.0
+23:25:58,80 __main__ DEBUG Volume of coal is too high
+23:25:58,80 __main__ DEBUG Energy price: 444.0
+23:25:58,81 __main__ DEBUG Not enough money to buy uranium plant
+23:25:58,81 __main__ DEBUG Energy price: 444.0
+23:25:58,81 __main__ DEBUG Energy price: 444.0
+23:25:58,81 __main__ DEBUG Volume of gas is too high
+23:25:58,81 __main__ DEBUG Energy price: 444.0
+23:25:58,81 __main__ DEBUG Volume of oil is too high
+23:25:59,94 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:59,356 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:59,367 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:59,566 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:59,576 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:59,872 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:25:59,880 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:25:59,974 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:25:59,979 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:00,77 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:00,85 __main__ DEBUG Money: 12052389
+23:26:00,85 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA37TFSR18QBXBBMT1TYV8P', 'sell_order_id': '01HVA37G9ZDCWJERX05Y753ZN5', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 632, 'total_price': 42876, 'trade_size': 2, 'trade_price': 21438}, {'buy_order_id': '01HVA37TP0S9G4RWGFV8RCBKFD', 'sell_order_id': '01HVA37GA90C9GPMD7WTEVYWQV', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 632, 'total_price': 115984, 'trade_size': 2, 'trade_price': 57992}, {'buy_order_id': '01HVA37TYGNG7V4AMQEGTENQPN', 'sell_order_id': '01HVA37GABR908J4A0FK95K4FS', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 632, 'total_price': 126352, 'trade_size': 2, 'trade_price': 63176}], 'sell': []}
+23:26:00,85 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 117, 117, 117, 117], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464, 1464, 1463, 1462, 1462, 1461, 1460, 1460, 1459, 1459, 1458, 1458, 1458, 1458, 1458, 1458], 'biomass': [126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 127, 127, 127, 127, 127], 'gas': [303, 303, 303, 303, 303, 303, 303, 303, 302, 302, 302, 302, 302, 302, 302, 302, 301, 301, 301, 301, 301, 301], 'oil': [383, 383, 383, 383, 383, 383, 383, 383, 384, 384, 384, 384, 384, 384, 384, 385, 385, 385, 385, 385, 385, 385], 'geothermal': [42, 42, 49, 52, 56, 59, 59, 59, 56, 52, 52, 49, 49, 49, 49, 52, 52, 52, 56, 56, 56, 56], 'wind': [16, 18, 19, 19, 18, 16, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15], 'solar': [162, 175, 148, 105, 57, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'hydro': [128, 128, 128, 128, 128, 128, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 128, 127, 127, 127, 127]}
+23:26:00,86 __main__ DEBUG Roi {'coal': 3.3988683736361644e-05, 'uranium': 1.4994405594405595e-05, 'biomass': 1.1539829657653106e-05, 'gas': 2.754916402422403e-05, 'oil': 3.510152723017493e-05, 'geothermal': 1.3113636363636363e-05, 'wind': 7.863636363636363e-06, 'solar': 2.9818181818181816e-05, 'hydro': 1.0602780847848323e-05}
+23:26:00,86 __main__ DEBUG Energy price: 444.0
+23:26:00,86 __main__ DEBUG Volume of coal is too high
+23:26:00,86 __main__ DEBUG Energy price: 444.0
+23:26:00,86 __main__ DEBUG Not enough money to buy uranium plant
+23:26:00,86 __main__ DEBUG Energy price: 444.0
+23:26:00,86 __main__ DEBUG Energy price: 444.0
+23:26:00,86 __main__ DEBUG Volume of gas is too high
+23:26:00,87 __main__ DEBUG Energy price: 444.0
+23:26:00,87 __main__ DEBUG Volume of oil is too high
+23:26:01,101 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:01,204 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:01,215 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:01,458 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:01,468 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:01,653 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:26:01,663 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:01,948 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:01,955 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:02,68 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 20
+23:26:02,73 __main__ DEBUG Money: 12052389
+23:26:02,73 __main__ DEBUG Matched trades: {'buy': [], 'sell': []}
+23:26:02,73 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 117, 117, 117, 117, 117], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464, 1464, 1463, 1462, 1462, 1461, 1460, 1460, 1459, 1459, 1458, 1458, 1458, 1458, 1458, 1458, 1458], 'biomass': [126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 127, 127, 127, 127, 127, 127], 'gas': [303, 303, 303, 303, 303, 303, 303, 303, 302, 302, 302, 302, 302, 302, 302, 302, 301, 301, 301, 301, 301, 301, 301], 'oil': [383, 383, 383, 383, 383, 383, 383, 383, 384, 384, 384, 384, 384, 384, 384, 385, 385, 385, 385, 385, 385, 385, 385], 'geothermal': [42, 42, 49, 52, 56, 59, 59, 59, 56, 52, 52, 49, 49, 49, 49, 52, 52, 52, 56, 56, 56, 56, 59], 'wind': [16, 18, 19, 19, 18, 16, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15], 'solar': [162, 175, 148, 105, 57, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'hydro': [128, 128, 128, 128, 128, 128, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 128, 127, 127, 127, 127, 126]}
+23:26:02,74 __main__ DEBUG Roi {'coal': 3.399909055930603e-05, 'uranium': 1.4992642140468228e-05, 'biomass': 1.1542901115813775e-05, 'gas': 2.7544838572258276e-05, 'oil': 3.5105682732392305e-05, 'geothermal': 1.3184782608695652e-05, 'wind': 7.847826086956522e-06, 'solar': 2.852173913043478e-05, 'hydro': 1.0598008008263275e-05}
+23:26:02,74 __main__ DEBUG Energy price: 440.8
+23:26:02,81 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:02,181 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:26:02,183 __main__ DEBUG Buying coal price: 22481.55, size: 50, response: "01HVA380QPNCEAPY8AN1A56T43"
+23:26:02,183 __main__ DEBUG Energy price: 440.8
+23:26:02,183 __main__ DEBUG Not enough money to buy uranium plant
+23:26:02,183 __main__ DEBUG Energy price: 440.8
+23:26:02,183 __main__ DEBUG Energy price: 440.8
+23:26:02,186 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:02,463 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:26:02,465 __main__ DEBUG Buying gas price: 58975.350000000006, size: 11, response: "01HVA380V74VJE2T6FH7JGA016"
+23:26:02,465 __main__ DEBUG Energy price: 440.8
+23:26:02,467 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:02,663 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:26:02,665 __main__ DEBUG Buying oil price: 65720.55, size: 10, response: "01HVA381397ZJXV499NNY88WSY"
+23:26:03,677 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:03,763 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:03,768 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:04,69 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:04,75 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:04,274 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:26:04,279 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:04,563 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:04,568 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:04,789 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:04,794 __main__ DEBUG Money: 11769827
+23:26:04,795 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA380QPNCEAPY8AN1A56T43', 'sell_order_id': '01HVA37W117ZT9QRX7C3J2X13M', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 634, 'total_price': 42822, 'trade_size': 2, 'trade_price': 21411}, {'buy_order_id': '01HVA380V74VJE2T6FH7JGA016', 'sell_order_id': '01HVA37W1AD0E5PT4MH8T1SVE8', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 634, 'total_price': 114558, 'trade_size': 2, 'trade_price': 57279}, {'buy_order_id': '01HVA381397ZJXV499NNY88WSY', 'sell_order_id': '01HVA37W1D5JF9CQ7XZQRY00DD', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 634, 'total_price': 125182, 'trade_size': 2, 'trade_price': 62591}], 'sell': []}
+23:26:04,795 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 117, 117, 117, 117, 117, 117], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464, 1464, 1463, 1462, 1462, 1461, 1460, 1460, 1459, 1459, 1458, 1458, 1458, 1458, 1458, 1458, 1458, 1457], 'biomass': [126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 127, 127, 127, 127, 127, 127, 127], 'gas': [303, 303, 303, 303, 303, 303, 303, 303, 302, 302, 302, 302, 302, 302, 302, 302, 301, 301, 301, 301, 301, 301, 301, 301], 'oil': [383, 383, 383, 383, 383, 383, 383, 383, 384, 384, 384, 384, 384, 384, 384, 385, 385, 385, 385, 385, 385, 385, 385, 385], 'geothermal': [42, 42, 49, 52, 56, 59, 59, 59, 56, 52, 52, 49, 49, 49, 49, 52, 52, 52, 56, 56, 56, 56, 59, 59], 'wind': [16, 18, 19, 19, 18, 16, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15], 'solar': [162, 175, 148, 105, 57, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7], 'hydro': [128, 128, 128, 128, 128, 128, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 128, 127, 127, 127, 127, 126, 127]}
+23:26:04,795 __main__ DEBUG Roi {'coal': 3.400863014700505e-05, 'uranium': 1.499059829059829e-05, 'biomass': 1.1545716619127722e-05, 'gas': 2.7540873574623e-05, 'oil': 3.5109491942758236e-05, 'geothermal': 1.325e-05, 'wind': 7.833333333333333e-06, 'solar': 2.7625e-05, 'hydro': 1.0597102814548869e-05}
+23:26:04,795 __main__ DEBUG Energy price: 443.20000000000005
+23:26:04,795 __main__ DEBUG Volume of coal is too high
+23:26:04,795 __main__ DEBUG Energy price: 443.20000000000005
+23:26:04,795 __main__ DEBUG Not enough money to buy uranium plant
+23:26:04,795 __main__ DEBUG Energy price: 443.20000000000005
+23:26:04,795 __main__ DEBUG Energy price: 443.20000000000005
+23:26:04,795 __main__ DEBUG Volume of gas is too high
+23:26:04,796 __main__ DEBUG Energy price: 443.20000000000005
+23:26:04,796 __main__ DEBUG Volume of oil is too high
+23:26:05,804 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:06,1 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:06,6 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:06,119 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:06,123 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:06,221 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:26:06,226 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:06,424 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:06,432 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:06,658 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 20
+23:26:06,660 __main__ DEBUG Money: 11769827
+23:26:06,660 __main__ DEBUG Matched trades: {'buy': [], 'sell': []}
+23:26:06,660 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 117, 117, 117, 117, 117, 117, 117], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464, 1464, 1463, 1462, 1462, 1461, 1460, 1460, 1459, 1459, 1458, 1458, 1458, 1458, 1458, 1458, 1458, 1457, 1457], 'biomass': [126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 127, 127, 127, 127, 127, 127, 127, 127], 'gas': [303, 303, 303, 303, 303, 303, 303, 303, 302, 302, 302, 302, 302, 302, 302, 302, 301, 301, 301, 301, 301, 301, 301, 301, 301], 'oil': [383, 383, 383, 383, 383, 383, 383, 383, 384, 384, 384, 384, 384, 384, 384, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385], 'geothermal': [42, 42, 49, 52, 56, 59, 59, 59, 56, 52, 52, 49, 49, 49, 49, 52, 52, 52, 56, 56, 56, 56, 59, 59, 59], 'wind': [16, 18, 19, 19, 18, 16, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15], 'solar': [162, 175, 148, 105, 57, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 7], 'hydro': [128, 128, 128, 128, 128, 128, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 128, 127, 127, 127, 127, 126, 127, 127]}
+23:26:06,660 __main__ DEBUG Roi {'coal': 3.401740656768814e-05, 'uranium': 1.4988717948717949e-05, 'biomass': 1.1548306882176552e-05, 'gas': 2.7537225776798544e-05, 'oil': 3.5112996416294884e-05, 'geothermal': 1.3310000000000001e-05, 'wind': 7.82e-06, 'solar': 2.68e-05, 'hydro': 1.0596270036331615e-05}
+23:26:06,660 __main__ DEBUG Energy price: 443.20000000000005
+23:26:06,660 __main__ DEBUG Volume of coal is too high
+23:26:06,660 __main__ DEBUG Energy price: 443.20000000000005
+23:26:06,660 __main__ DEBUG Not enough money to buy uranium plant
+23:26:06,660 __main__ DEBUG Energy price: 443.20000000000005
+23:26:06,660 __main__ DEBUG Energy price: 443.20000000000005
+23:26:06,660 __main__ DEBUG Volume of gas is too high
+23:26:06,660 __main__ DEBUG Energy price: 443.20000000000005
+23:26:06,660 __main__ DEBUG Volume of oil is too high
+23:26:07,665 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:07,806 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:07,810 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:07,995 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:07,998 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:08,271 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:26:08,275 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:08,370 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:08,374 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:08,473 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 20
+23:26:08,475 __main__ DEBUG Money: 11769827
+23:26:08,475 __main__ DEBUG Matched trades: {'buy': [], 'sell': []}
+23:26:08,475 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 117, 117, 117, 117, 117, 117, 117, 117], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464, 1464, 1463, 1462, 1462, 1461, 1460, 1460, 1459, 1459, 1458, 1458, 1458, 1458, 1458, 1458, 1458, 1457, 1457, 1457], 'biomass': [126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 127, 127, 127, 127, 127, 127, 127, 127, 127], 'gas': [303, 303, 303, 303, 303, 303, 303, 303, 302, 302, 302, 302, 302, 302, 302, 302, 301, 301, 301, 301, 301, 301, 301, 301, 301, 301], 'oil': [383, 383, 383, 383, 383, 383, 383, 383, 384, 384, 384, 384, 384, 384, 384, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385], 'geothermal': [42, 42, 49, 52, 56, 59, 59, 59, 56, 52, 52, 49, 49, 49, 49, 52, 52, 52, 56, 56, 56, 56, 59, 59, 59, 59], 'wind': [16, 18, 19, 19, 18, 16, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 16], 'solar': [162, 175, 148, 105, 57, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 7, 17], 'hydro': [128, 128, 128, 128, 128, 128, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 128, 127, 127, 127, 127, 126, 127, 127, 126]}
+23:26:08,475 __main__ DEBUG Roi {'coal': 3.402550787908793e-05, 'uranium': 1.498698224852071e-05, 'biomass': 1.1550697894221627e-05, 'gas': 2.7533858578806743e-05, 'oil': 3.511623131494411e-05, 'geothermal': 1.3365384615384615e-05, 'wind': 7.826923076923076e-06, 'solar': 2.6423076923076925e-05, 'hydro': 1.0592298324833945e-05}
+23:26:08,475 __main__ DEBUG Energy price: 444.0
+23:26:08,477 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:08,581 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:26:08,582 __main__ DEBUG Buying coal price: 22481.55, size: 50, response: "01HVA386Z4YWN4Q0AX1WE8N47E"
+23:26:08,583 __main__ DEBUG Energy price: 444.0
+23:26:08,583 __main__ DEBUG Not enough money to buy uranium plant
+23:26:08,583 __main__ DEBUG Energy price: 444.0
+23:26:08,583 __main__ DEBUG No sell orders for gas
+23:26:08,583 __main__ DEBUG Energy price: 444.0
+23:26:08,585 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:08,846 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:26:08,847 __main__ DEBUG Buying oil price: 66364.2, size: 8, response: "01HVA38783ZXMKBQB1RR8HNXSD"
+23:26:09,854 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:10,54 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:10,58 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:10,235 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:10,239 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:10,323 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:26:10,327 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:10,521 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:10,527 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:10,628 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:10,629 __main__ DEBUG Money: 11599369
+23:26:10,629 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA386Z4YWN4Q0AX1WE8N47E', 'sell_order_id': '01HVA37W117ZT9QRX7C3J2X13M', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 636, 'total_price': 42822, 'trade_size': 2, 'trade_price': 21411}, {'buy_order_id': '01HVA38783ZXMKBQB1RR8HNXSD', 'sell_order_id': '01HVA37W1EKN7Y8KD45Y9287A5', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 636, 'total_price': 127636, 'trade_size': 2, 'trade_price': 63818}], 'sell': []}
+23:26:10,629 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 117, 117, 117, 117, 117, 117, 117, 117, 117], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464, 1464, 1463, 1462, 1462, 1461, 1460, 1460, 1459, 1459, 1458, 1458, 1458, 1458, 1458, 1458, 1458, 1457, 1457, 1457, 1457], 'biomass': [126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127], 'gas': [303, 303, 303, 303, 303, 303, 303, 303, 302, 302, 302, 302, 302, 302, 302, 302, 301, 301, 301, 301, 301, 301, 301, 301, 301, 301, 301], 'oil': [383, 383, 383, 383, 383, 383, 383, 383, 384, 384, 384, 384, 384, 384, 384, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385], 'geothermal': [42, 42, 49, 52, 56, 59, 59, 59, 56, 52, 52, 49, 49, 49, 49, 52, 52, 52, 56, 56, 56, 56, 59, 59, 59, 59, 59], 'wind': [16, 18, 19, 19, 18, 16, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 16, 18], 'solar': [162, 175, 148, 105, 57, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 7, 17, 29], 'hydro': [128, 128, 128, 128, 128, 128, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 128, 127, 127, 127, 127, 126, 127, 127, 126, 127]}
+23:26:10,629 __main__ DEBUG Roi {'coal': 3.4033009093346984e-05, 'uranium': 1.4985375118708453e-05, 'biomass': 1.1552911794263363e-05, 'gas': 2.753074080288841e-05, 'oil': 3.511922659147116e-05, 'geothermal': 1.3416666666666666e-05, 'wind': 7.87037037037037e-06, 'solar': 2.651851851851852e-05, 'hydro': 1.059170517795556e-05}
+23:26:10,630 __main__ DEBUG Energy price: 444.0
+23:26:10,630 __main__ DEBUG Volume of coal is too high
+23:26:10,630 __main__ DEBUG Energy price: 444.0
+23:26:10,630 __main__ DEBUG Not enough money to buy uranium plant
+23:26:10,630 __main__ DEBUG Energy price: 444.0
+23:26:10,630 __main__ DEBUG Energy price: 444.0
+23:26:10,632 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:10,851 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:26:10,854 __main__ DEBUG Buying gas price: 58234.05, size: 12, response: "01HVA38926ZQGPA37ESKZMF6W8"
+23:26:10,854 __main__ DEBUG Energy price: 444.0
+23:26:10,854 __main__ DEBUG Volume of oil is too high
+23:26:11,865 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:12,3 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:12,8 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:12,108 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:12,112 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:12,195 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:26:12,198 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:12,369 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:12,373 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:12,569 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:12,571 __main__ DEBUG Money: 11487339
+23:26:12,571 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA38926ZQGPA37ESKZMF6W8', 'sell_order_id': '01HVA387RVVA0C674FNFX8WJR3', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 637, 'total_price': 112030, 'trade_size': 2, 'trade_price': 56015}], 'sell': []}
+23:26:12,571 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464, 1464, 1463, 1462, 1462, 1461, 1460, 1460, 1459, 1459, 1458, 1458, 1458, 1458, 1458, 1458, 1458, 1457, 1457, 1457, 1457, 1457], 'biomass': [126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127], 'gas': [303, 303, 303, 303, 303, 303, 303, 303, 302, 302, 302, 302, 302, 302, 302, 302, 301, 301, 301, 301, 301, 301, 301, 301, 301, 301, 301, 301], 'oil': [383, 383, 383, 383, 383, 383, 383, 383, 384, 384, 384, 384, 384, 384, 384, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385], 'geothermal': [42, 42, 49, 52, 56, 59, 59, 59, 56, 52, 52, 49, 49, 49, 49, 52, 52, 52, 56, 56, 56, 56, 59, 59, 59, 59, 59, 59], 'wind': [16, 18, 19, 19, 18, 16, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 16, 18, 18], 'solar': [162, 175, 148, 105, 57, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 7, 17, 29, 29], 'hydro': [128, 128, 128, 128, 128, 128, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 128, 127, 127, 127, 127, 126, 127, 127, 126, 127, 127]}
+23:26:12,571 __main__ DEBUG Roi {'coal': 3.403997450658754e-05, 'uranium': 1.4983882783882783e-05, 'biomass': 1.1554967558587832e-05, 'gas': 2.752784572524995e-05, 'oil': 3.512200791967486e-05, 'geothermal': 1.3464285714285713e-05, 'wind': 7.910714285714286e-06, 'solar': 2.6607142857142858e-05, 'hydro': 1.0591154398711345e-05}
+23:26:12,571 __main__ DEBUG Energy price: 444.0
+23:26:12,573 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:12,671 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:26:12,672 __main__ DEBUG Buying coal price: 22453.2, size: 46, response: "01HVA38AYYFB4D4XMDZFJSXNMF"
+23:26:12,672 __main__ DEBUG Energy price: 444.0
+23:26:12,672 __main__ DEBUG Not enough money to buy uranium plant
+23:26:12,672 __main__ DEBUG Energy price: 444.0
+23:26:12,672 __main__ DEBUG Energy price: 444.0
+23:26:12,674 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:12,947 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:26:12,948 __main__ DEBUG Buying gas price: 58234.05, size: 12, response: "01HVA38B2ABE0CR7B51QP717C3"
+23:26:12,949 __main__ DEBUG Energy price: 444.0
+23:26:12,951 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:13,92 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:26:13,94 __main__ DEBUG Buying oil price: 64461.600000000006, size: 12, response: "01HVA38BC25SAKP0GJ3M6TYBWZ"
+23:26:14,102 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:14,390 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:14,394 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:14,467 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:14,471 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:14,567 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:26:14,572 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:14,676 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:14,680 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:15,49 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:15,55 __main__ DEBUG Money: 11487339
+23:26:15,55 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA38926ZQGPA37ESKZMF6W8', 'sell_order_id': '01HVA387RVVA0C674FNFX8WJR3', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 637, 'total_price': 112030, 'trade_size': 2, 'trade_price': 56015}], 'sell': []}
+23:26:15,55 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464, 1464, 1463, 1462, 1462, 1461, 1460, 1460, 1459, 1459, 1458, 1458, 1458, 1458, 1458, 1458, 1458, 1457, 1457, 1457, 1457, 1457, 1457], 'biomass': [126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127], 'gas': [303, 303, 303, 303, 303, 303, 303, 303, 302, 302, 302, 302, 302, 302, 302, 302, 301, 301, 301, 301, 301, 301, 301, 301, 301, 301, 301, 301, 301], 'oil': [383, 383, 383, 383, 383, 383, 383, 383, 384, 384, 384, 384, 384, 384, 384, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385], 'geothermal': [42, 42, 49, 52, 56, 59, 59, 59, 56, 52, 52, 49, 49, 49, 49, 52, 52, 52, 56, 56, 56, 56, 59, 59, 59, 59, 59, 59, 59], 'wind': [16, 18, 19, 19, 18, 16, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 16, 18, 18, 20], 'solar': [162, 175, 148, 105, 57, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 7, 17, 29, 29, 41], 'hydro': [128, 128, 128, 128, 128, 128, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 128, 127, 127, 127, 127, 126, 127, 127, 126, 127, 127, 127]}
+23:26:15,55 __main__ DEBUG Roi {'coal': 3.404645954650116e-05, 'uranium': 1.4982493368700264e-05, 'biomass': 1.1556881546062337e-05, 'gas': 2.752515030813829e-05, 'oil': 3.5124597432140364e-05, 'geothermal': 1.3508620689655172e-05, 'wind': 7.982758620689655e-06, 'solar': 2.7103448275862066e-05, 'hydro': 1.0590641604242592e-05}
+23:26:15,55 __main__ DEBUG Energy price: 420.0
+23:26:15,60 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:15,179 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:26:15,180 __main__ DEBUG Buying coal price: 22453.2, size: 46, response: "01HVA38DE161X794YQQW1QQFFF"
+23:26:15,180 __main__ DEBUG Energy price: 420.0
+23:26:15,180 __main__ DEBUG Not enough money to buy uranium plant
+23:26:15,181 __main__ DEBUG Energy price: 420.0
+23:26:15,181 __main__ DEBUG Energy price: 420.0
+23:26:15,183 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:15,294 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:26:15,295 __main__ DEBUG Buying gas price: 58815.75, size: 11, response: "01HVA38DHMGC8HDBDVPRCJ4465"
+23:26:15,295 __main__ DEBUG Energy price: 420.0
+23:26:15,297 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:15,438 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "POST /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/orders/create?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 28
+23:26:15,439 __main__ DEBUG Buying oil price: 65105.25, size: 11, response: "01HVA38DM350C9EPWPKMVJK6A5"
+23:26:16,455 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:16,573 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:16,584 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:16,795 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:16,800 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:17,143 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:26:17,149 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:17,288 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:17,293 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:17,365 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:17,367 __main__ DEBUG Money: 11051515
+23:26:17,367 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA38AYYFB4D4XMDZFJSXNMF', 'sell_order_id': '01HVA387RKVBDMCHS486ACANBR', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 638, 'total_price': 42768, 'trade_size': 2, 'trade_price': 21384}, {'buy_order_id': '01HVA38DE161X794YQQW1QQFFF', 'sell_order_id': '01HVA387RKVBDMCHS486ACANBR', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'coal', 'tick': 638, 'total_price': 42768, 'trade_size': 2, 'trade_price': 21384}, {'buy_order_id': '01HVA38B2ABE0CR7B51QP717C3', 'sell_order_id': '01HVA387RVVA0C674FNFX8WJR3', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 638, 'total_price': 112030, 'trade_size': 2, 'trade_price': 56015}, {'buy_order_id': '01HVA38DHMGC8HDBDVPRCJ4465', 'sell_order_id': '01HVA387RWASGE1PP0BXJ48X38', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'gas', 'tick': 638, 'total_price': 114248, 'trade_size': 2, 'trade_price': 57124}, {'buy_order_id': '01HVA38BC25SAKP0GJ3M6TYBWZ', 'sell_order_id': '01HVA387RYP1NR44C6R7KNQHJK', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 638, 'total_price': 124010, 'trade_size': 2, 'trade_price': 62005}], 'sell': []}
+23:26:17,367 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464, 1464, 1463, 1462, 1462, 1461, 1460, 1460, 1459, 1459, 1458, 1458, 1458, 1458, 1458, 1458, 1458, 1457, 1457, 1457, 1457, 1457, 1457, 1457], 'biomass': [126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127], 'gas': [303, 303, 303, 303, 303, 303, 303, 303, 302, 302, 302, 302, 302, 302, 302, 302, 301, 301, 301, 301, 301, 301, 301, 301, 301, 301, 301, 301, 301, 300], 'oil': [383, 383, 383, 383, 383, 383, 383, 383, 384, 384, 384, 384, 384, 384, 384, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385], 'geothermal': [42, 42, 49, 52, 56, 59, 59, 59, 56, 52, 52, 49, 49, 49, 49, 52, 52, 52, 56, 56, 56, 56, 59, 59, 59, 59, 59, 59, 59, 59], 'wind': [16, 18, 19, 19, 18, 16, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 16, 18, 18, 20, 22], 'solar': [162, 175, 148, 105, 57, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 7, 17, 29, 29, 41, 45], 'hydro': [128, 128, 128, 128, 128, 128, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 128, 127, 127, 127, 127, 126, 127, 127, 126, 127, 127, 127, 127]}
+23:26:17,368 __main__ DEBUG Roi {'coal': 3.405251225042054e-05, 'uranium': 1.4981196581196582e-05, 'biomass': 1.1558667934371876e-05, 'gas': 2.7519594753980354e-05, 'oil': 3.51270143104415e-05, 'geothermal': 1.355e-05, 'wind': 8.083333333333334e-06, 'solar': 2.77e-05, 'hydro': 1.0590162996071757e-05}
+23:26:17,368 __main__ DEBUG Energy price: 418.40000000000003
+23:26:17,368 __main__ DEBUG Volume of coal is too high
+23:26:17,368 __main__ DEBUG Energy price: 418.40000000000003
+23:26:17,368 __main__ DEBUG Not enough money to buy uranium plant
+23:26:17,368 __main__ DEBUG Energy price: 418.40000000000003
+23:26:17,368 __main__ DEBUG Energy price: 418.40000000000003
+23:26:17,368 __main__ DEBUG Volume of gas is too high
+23:26:17,368 __main__ DEBUG Energy price: 418.40000000000003
+23:26:17,368 __main__ DEBUG Volume of oil is too high
+23:26:18,378 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:18,588 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/plant/list?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:18,595 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:18,769 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/dataset?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:18,774 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:18,877 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/orders?team_secret=9EJ6MAV3N5&restriction=best HTTP/1.1" 200 None
+23:26:18,882 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:19,245 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:19,255 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): algotrade-server.xfer.hr:443
+23:26:19,353 urllib3.connectionpool DEBUG https://algotrade-server.xfer.hr:443 "GET /game/01HVA1DXET3NJNZP5FY0Y39C7V/player/01HVA364RPYG0HEZVGJ8C8NA7V/trades?team_secret=9EJ6MAV3N5 HTTP/1.1" 200 None
+23:26:19,360 __main__ DEBUG Money: 10927505
+23:26:19,361 __main__ DEBUG Matched trades: {'buy': [{'buy_order_id': '01HVA38DM350C9EPWPKMVJK6A5', 'sell_order_id': '01HVA387RYP1NR44C6R7KNQHJK', 'buy_player_id': '01HVA364RPYG0HEZVGJ8C8NA7V', 'sell_player_id': '01HVA1E0CY867K4EBEQMR2NWZN', 'resource': 'oil', 'tick': 639, 'total_price': 124010, 'trade_size': 2, 'trade_price': 62005}], 'sell': []}
+23:26:19,361 __main__ DEBUG Outputs {'coal': [116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117], 'uranium': [1469, 1468, 1467, 1466, 1466, 1465, 1464, 1464, 1463, 1462, 1462, 1461, 1460, 1460, 1459, 1459, 1458, 1458, 1458, 1458, 1458, 1458, 1458, 1457, 1457, 1457, 1457, 1457, 1457, 1457, 1457], 'biomass': [126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127], 'gas': [303, 303, 303, 303, 303, 303, 303, 303, 302, 302, 302, 302, 302, 302, 302, 302, 301, 301, 301, 301, 301, 301, 301, 301, 301, 301, 301, 301, 301, 300, 300], 'oil': [383, 383, 383, 383, 383, 383, 383, 383, 384, 384, 384, 384, 384, 384, 384, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385, 385], 'geothermal': [42, 42, 49, 52, 56, 59, 59, 59, 56, 52, 52, 49, 49, 49, 49, 52, 52, 52, 56, 56, 56, 56, 59, 59, 59, 59, 59, 59, 59, 59, 62], 'wind': [16, 18, 19, 19, 18, 16, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 16, 18, 18, 20, 22, 23], 'solar': [162, 175, 148, 105, 57, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 7, 17, 29, 29, 41, 45, 38], 'hydro': [128, 128, 128, 128, 128, 128, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 128, 127, 127, 127, 127, 126, 127, 127, 126, 127, 127, 127, 127, 127]}
+23:26:19,361 __main__ DEBUG Roi {'coal': 3.405817445731286e-05, 'uranium': 1.4979983457402812e-05, 'biomass': 1.1560339071822736e-05, 'gas': 2.751439762267132e-05, 'oil': 3.5129275261110314e-05, 'geothermal': 1.3612903225806452e-05, 'wind': 8.193548387096774e-06, 'solar': 2.803225806451613e-05, 'hydro': 1.0589715265847427e-05}
+23:26:19,361 __main__ DEBUG Energy price: 422.40000000000003
+23:26:19,361 __main__ DEBUG Volume of coal is too high
+23:26:19,361 __main__ DEBUG Energy price: 422.40000000000003
+23:26:19,362 __main__ DEBUG Not enough money to buy uranium plant
+23:26:19,362 __main__ DEBUG Energy price: 422.40000000000003
+23:26:19,362 __main__ DEBUG Energy price: 422.40000000000003
+23:26:19,362 __main__ DEBUG Volume of gas is too high
+23:26:19,362 __main__ DEBUG Energy price: 422.40000000000003
+23:26:19,362 __main__ DEBUG Volume of oil is too high
