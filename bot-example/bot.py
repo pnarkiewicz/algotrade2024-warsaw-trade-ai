@@ -7,7 +7,7 @@ from algotrade_api import AlgotradeApi, PowerPlant, Resource
 
 # Change this at the start of the competition
 url = "https://algotrade-server.xfer.hr" # Change this
-team_secret = "gogi" # Change this
+team_secret = "9EJ6MAV3N5" # Change this
 
 
 api = AlgotradeApi(url, team_secret)
