@@ -17,3 +17,6 @@ Run:
 `> python bot.py`
 
 Change the bot script and earn the most money in the game!
+
+## Warsaw Mesh Trade AI
+team_secret: 9EJ6MAV3N5
