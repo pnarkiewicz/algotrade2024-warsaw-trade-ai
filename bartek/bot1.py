@@ -1,8 +1,10 @@
 import sys
 import os
 
+os.chdir(os.path.dirname(__file__))
+
 sys.path.append(
-    os.path.abspath("../bot-example")
+    os.path.join(os.path.dirname(__file__), "../bot-example")
 )
 from time import sleep
 from pprint import pprint
@@ -53,7 +55,10 @@ UNRENOVABLE = [
 ]
 RENOVABLE = ["geothermal", "wind", "solar", "hydro"]
 
-MONEY = 0
+MONEY_START = 50000000
+MONEY = MONEY_START
+MONEY_HISTORY = [] #TODO: change base, keeps previous history, without current
+PLANTS_SPENT_LAST_STEP = 0
 
 PLANTS_BUY_PRICES: Dict[str, int]
 OWNED_PLANTS: Dict[str, int]
@@ -259,6 +264,8 @@ def on_tick_start(api: AlgotradeApi):
 
         ORDERS = r_orders.json()
 
+        update_money_history()
+        logger.debug(f"MONEY_HISTORY {MONEY_HISTORY}")
         MONEY = r_player.json()["money"]
         CURRENT_VOLUME = r_player.json()["resources"]
 
@@ -298,9 +305,11 @@ def sum_of_matched_trades(matched_trades):
 
 def get_total_price_sold_energy():
     s = sum_of_matched_trades(MATCHED_TRADES)
-    return MONEY - s
+    return MONEY - MONEY_HISTORY[-1] - s
     
-
+def update_money_history():
+    global MONEY_HISTORY
+    MONEY_HISTORY.append(MONEY)
 
 
 def check_if_power_plant_running(api: AlgotradeApi, resource: Resource):
