@@ -10,11 +10,14 @@ from typing import *
 from time import time
 from datetime import datetime
 from collections import defaultdict
+import concurrent.futures
 
 import algotrade_api
 from algotrade_api import AlgotradeApi, PowerPlant, Resource
 
 from logging import getLogger, basicConfig, INFO, DEBUG, FileHandler
+
+pool = concurrent.futures.ThreadPoolExecutor(max_workers=8)
 
 basicConfig(
     filename=f"logs/{time()}.log",
@@ -38,7 +41,7 @@ TICK_TIME = 0.01
 
 ENERGY_DISCOUNT = 0.8
 ENERGY_DECAY = 0.95
-BUY_MARGIN = 0.05
+BUY_MARGIN = 0.10
 
 UNRENOVABLE = [
     "coal",
@@ -210,11 +213,21 @@ def on_game_init(api: AlgotradeApi):
 
 
 def on_tick_start(api: AlgotradeApi):
-    r_plants = api.get_plants()
-    r_dataset = api.get_dataset()
-    r_orders = api.get_orders(restriction="best")
-    r_player = api.get_player()
-    r_matched_trades = api.get_matched_trades()
+    # r_plants = api.get_plants()
+    # r_dataset = api.get_dataset()
+    # r_orders = api.get_orders(restriction="best")
+    # r_player = api.get_player()
+    # r_matched_trades = api.get_matched_trades()
+    futures_list = [
+        pool.submit(api.get_plants),
+        pool.submit(api.get_dataset),
+        pool.submit(api.get_orders, restriction="best"),
+        pool.submit(api.get_player),
+        pool.submit(api.get_matched_trades),
+    ]
+    r_plants, r_dataset, r_orders, r_player, r_matched_trades = [
+        f.result() for f in futures_list
+    ]
     if any([r.status_code != 200 for r in [r_plants, r_dataset, r_orders, r_player]]):
         logger.debug("Error in fetching data, retrying")
         sleep(TICK_TIME)
@@ -230,7 +243,8 @@ def on_tick_start(api: AlgotradeApi):
         DATASET = [v for v in r_dataset.json().values()][0]
         for key, value in DATASET["power_plants_output"].items():
             OUTPUT_PLANTS[key].append(value)
-            OUTPUT_PLANTS[key] = OUTPUT_PLANTS[key][: 14 * 24]
+            if len(OUTPUT_PLANTS[key]) > 14 * 24:
+                OUTPUT_PLANTS[key] = OUTPUT_PLANTS[key][: 14 * 24]
 
         ROI = {
             key: roi(value, PLANTS_PRICES[key]) for key, value in OUTPUT_PLANTS.items()
@@ -253,13 +267,14 @@ def on_tick_start(api: AlgotradeApi):
 
 
 def get_energy_price(mean_energy_price_per_hour) -> float:
-    return (
-        min(
-            DATASET["max_energy_price"],
-            mean_energy_price_per_hour[int((CURRENT_HOUR + 1) % 24)],
-        )
-        * ENERGY_DISCOUNT
-    )
+    return DATASET["max_energy_price"] * ENERGY_DISCOUNT
+    # return (
+    #     min(
+    #         DATASET["max_energy_price"],
+    #         mean_energy_price_per_hour[int((CURRENT_HOUR + 1) % 24)],
+    #     )
+    #     * ENERGY_DISCOUNT
+    # )
 
 
 def check_if_power_plant_running(api: AlgotradeApi, resource: Resource):
@@ -270,9 +285,9 @@ def check_if_power_plant_running(api: AlgotradeApi, resource: Resource):
             logger.debug(f"Not enough money to buy {resource.value} plant")
             return False
         else:
-            MONEY -= PLANTS_PRICES[resource.value]
             try:
                 r = api.buy_plant(resource.value)
+                MONEY -= PLANTS_PRICES[resource.value]
             except Exception as e:
                 logger.debug(f"Error buying plant: {e}")
                 return False
@@ -333,7 +348,7 @@ def asset_arbitrage(
 
             actual_size = min(
                 resource_price[i]["size"],
-                MAX_VOLUME[resource.value] - CURRENT_VOLUME[resource.value],
+                OWNED_PLANTS[resource.value] * 2 - CURRENT_VOLUME[resource.value],
             )
             r = api.create_order(
                 resource=resource.value,
