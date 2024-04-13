@@ -56,7 +56,7 @@ UNRENOVABLE = [
 RENOVABLE = ["geothermal", "wind", "solar", "hydro"]
 
 MONEY_START = 50000000
-MINIMUM_MONEY_LEVEL_PER_PLANT = 2_000_000
+MINIMUM_MONEY_LEVEL_PER_PLANT = 0
 MONEY = MONEY_START
 MONEY_HISTORY = []  # TODO: change base, keeps previous history, without current
 PLANTS_SPENT_LAST_STEP = 0
@@ -160,9 +160,6 @@ MEAN_ENERGY_PRICE_PER_HOUR = {}
 N_NEXT_BUY_PLANTS_TRIES = defaultdict(int)
 BUY_AFTER_N_SUCCESSFUL_TRIES = 10
 RENOVABLE_BUY_AFTER_N_SUCCESSFUL_TRIES = 15
-TOTAL_PRICE_SOLD_ENERGY = 0
-LAST_TICK = 0
-CURRENT_TICK = 0
 
 
 def run_with_inputs():
@@ -263,10 +260,6 @@ def on_tick_start(api: AlgotradeApi):
             key: roi(value, PLANTS_PRICES[key]) for key, value in OUTPUT_PLANTS.items()
         }
 
-        global CURRENT_TICK, LAST_TICK
-        LAST_TICK = CURRENT_TICK
-        CURRENT_TICK = DATASET["tick"]
-
         hour = datetime.fromisoformat(DATASET["date"]).hour
         CURRENT_HOUR = hour
         ENERGY_PRICE_PER_HOUR[hour].append(DATASET["max_energy_price"])
@@ -274,74 +267,40 @@ def on_tick_start(api: AlgotradeApi):
 
         ORDERS = r_orders.json()
 
-        update_money_history()
-        logger.debug(f"MONEY_HISTORY {MONEY_HISTORY}")
         MONEY = r_player.json()["money"]
         CURRENT_VOLUME = r_player.json()["resources"]
 
         MATCHED_TRADES = r_matched_trades.json()
 
         logger.debug(f"Money: {MONEY}")
-        logger.debug(f"Matched trades: {MATCHED_TRADES}")
+        logger.debug(f"Matched trades: {len(MATCHED_TRADES['buy'])}")
 
-        global TOTAL_PRICE_SOLD_ENERGY
-        TOTAL_PRICE_SOLD_ENERGY = get_total_price_sold_energy()
+        MINIMUM_MONEY_LEVEL_PER_PLANT = 0
+        for k, v in OWNED_PLANTS.items():
+            MINIMUM_MONEY_LEVEL_PER_PLANT += v * DATASET["resource_prices"][k] * 2
+        logger.debug(f"MINIMUM_MONEY_LEVEL_PER_PLANT: {MINIMUM_MONEY_LEVEL_PER_PLANT}")
 
 
 def get_energy_price() -> float:
-    # return DATASET["max_energy_price"] * ENERGY_DISCOUNT
-    # return DATASET["max_energy_price"] - 40
-    return 200
-    # return (
-    #     min(
-    #         DATASET["max_energy_price"],
-    #         mean_energy_price_per_hour[int((CURRENT_HOUR + 1) % 24)],
-    #     )
-    #     * ENERGY_DISCOUNT
-    # )
-
-
-def sum_of_matched_trades(matched_trades):
-    result = 0.0
-    buy = matched_trades.get("buy", [])
-    for order in buy:
-        result -= order["total_price"]
-
-    sell = matched_trades.get("sell", [])
-    for order in sell:
-        result += order["total_price"]
-
-    logger.debug(f"Sum of matched trades: {result}")
-    return result
-
-
-def get_total_price_sold_energy():
-    if CURRENT_TICK == LAST_TICK:
-        return 0
-    s = sum_of_matched_trades(MATCHED_TRADES)
-    result = MONEY - MONEY_HISTORY[-1] - s
-    logger.debug(f"Sold energy (price): {result:0.0f}")
-    return result
-
-
-def update_money_history():
-    if CURRENT_TICK == LAST_TICK:
-        return
-    global MONEY_HISTORY
-    MONEY_HISTORY.append(MONEY)
+    return DATASET["max_energy_price"] * ENERGY_DISCOUNT
 
 
 def check_if_power_plant_running(api: AlgotradeApi, resource: Resource):
     global MONEY
 
     if OWNED_PLANTS[resource.value] == 0:
-        if MONEY - MINIMUM_MONEY_LEVEL_PER_PLANT > PLANTS_PRICES[resource.value]:
+        if MONEY - MINIMUM_MONEY_LEVEL_PER_PLANT < PLANTS_PRICES[resource.value]:
             logger.debug(f"Not enough money to buy {resource.value} plant")
             return False
         else:
             try:
                 r = api.buy_plant(resource.value)
+                if r.status_code != 200:
+                    logger.debug(f"Error buying plant: {r.text}")
+                    return False
                 MONEY -= PLANTS_PRICES[resource.value]
+                N_NEXT_BUY_PLANTS_TRIES[resource.value] = 0
+                OWNED_PLANTS[resource.value] += 1
             except Exception as e:
                 logger.debug(f"Error buying plant: {e}")
                 return False
@@ -351,6 +310,7 @@ def check_if_power_plant_running(api: AlgotradeApi, resource: Resource):
             r = api.turn_on(resource.value, OWNED_PLANTS[resource.value])
             logger.debug(f"Turning on {resource.value} plant, response: {r.text}")
             POWERED_PLANTS[resource.value] = OWNED_PLANTS[resource.value]
+            return True
         except Exception as e:
             logger.debug(f"Error turning on plant: {e}")
             return False
@@ -375,6 +335,7 @@ def asset_arbitrage(
     resource: Resource,
     energy_price: float,
 ):
+    global MONEY
     if resource.value not in ORDERS:
         logger.debug(f"No orders for {resource.value}")
         return
@@ -395,7 +356,7 @@ def asset_arbitrage(
             < energy_price
         ):
             if not check_if_power_plant_running(api, resource):
-                continue
+                break
 
             actual_size = max(
                 min(
@@ -405,11 +366,11 @@ def asset_arbitrage(
                 0,
             )
 
-            actual_size = min(actual_size, MONEY // resource_price[i]["price"])
-
             if actual_size == 0:
                 logger.debug(f"Volume of {resource.value} is too high")
                 break
+
+            actual_size = min(actual_size, MONEY // abs(resource_price[i]["price"]))
 
             r = api.create_order(
                 resource=resource.value,
@@ -419,7 +380,6 @@ def asset_arbitrage(
                 expiration_length=4,
             )
 
-            global MONEY
             MONEY -= (
                 resource_price[i]["price"]
                 * (1 + BUY_MARGIN)
