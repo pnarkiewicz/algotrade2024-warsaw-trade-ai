@@ -198,6 +198,16 @@ class AlgotradeApi:
             params["end_tick"] = end_tick
         return requests.get(url, params=params)
 
+    def eneregy_demand(self, start_tick=None, end_tick=None):
+        """Get fulfilled energy trades on the energy market"""
+        url = f"{self.URL}/game/{self.game_id}/energy_demand"
+        params = {"team_secret": self.team_secret}
+        if start_tick:
+            params["start_tick"] = start_tick
+        if end_tick:
+            params["end_tick"] = end_tick
+        return requests.get(url, params=params)
+
     def get_matched_trades(self):
         return requests.get(
             f"{self.URL}/game/{self.game_id}/player/{self.player_id}/trades",
