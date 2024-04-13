@@ -3,9 +3,7 @@ import os
 
 os.chdir(os.path.dirname(__file__))
 
-sys.path.append(
-    os.path.join(os.path.dirname(__file__), "../bot-example")
-)
+sys.path.append(os.path.join(os.path.dirname(__file__), "../bot-example"))
 from time import sleep
 from pprint import pprint
 from collections import OrderedDict
@@ -58,8 +56,9 @@ UNRENOVABLE = [
 RENOVABLE = ["geothermal", "wind", "solar", "hydro"]
 
 MONEY_START = 50000000
+MINIMUM_MONEY_LEVEL_PER_PLANT = 2_000_000
 MONEY = MONEY_START
-MONEY_HISTORY = [] #TODO: change base, keeps previous history, without current
+MONEY_HISTORY = []  # TODO: change base, keeps previous history, without current
 PLANTS_SPENT_LAST_STEP = 0
 
 PLANTS_BUY_PRICES: Dict[str, int]
@@ -165,6 +164,7 @@ TOTAL_PRICE_SOLD_ENERGY = 0
 LAST_TICK = 0
 CURRENT_TICK = 0
 
+
 def run_with_inputs():
     # Get all games avaliable
     games = api.get_games().json()
@@ -247,9 +247,11 @@ def on_tick_start(api: AlgotradeApi):
         global PLANTS_PRICES, OWNED_PLANTS, POWERED_PLANTS, PLANT_SELL_PRICES, DATASET, ORDERS, MONEY, MATCHED_TRADES, CURRENT_VOLUME, ENERGY_PRICE_PER_HOUR, CURRENT_VOLUME, CURRENT_HOUR, OUTPUT_PLANTS, ROI
         r_plants = r_plants.json()
         PLANTS_PRICES = r_plants["buy_price"]
+        logger.debug(f"PLANTS_PRICES {PLANTS_PRICES}")
         OWNED_PLANTS = r_plants["power_plants_owned"]
         POWERED_PLANTS = r_plants["power_plants_powered"]
         PLANT_SELL_PRICES = r_plants["sell_price"]
+        logger.debug(f"PLANT_SELL_PRICES {PLANT_SELL_PRICES}")
 
         DATASET = [v for v in r_dataset.json().values()][0]
         for key, value in DATASET["power_plants_output"].items():
@@ -263,8 +265,7 @@ def on_tick_start(api: AlgotradeApi):
 
         global CURRENT_TICK, LAST_TICK
         LAST_TICK = CURRENT_TICK
-        CURRENT_TICK = DATASET['tick']
-
+        CURRENT_TICK = DATASET["tick"]
 
         hour = datetime.fromisoformat(DATASET["date"]).hour
         CURRENT_HOUR = hour
@@ -322,7 +323,7 @@ def get_total_price_sold_energy():
     logger.debug(f"Sold energy (price): {result:0.0f}")
     return result
 
-    
+
 def update_money_history():
     if CURRENT_TICK == LAST_TICK:
         return
@@ -334,7 +335,7 @@ def check_if_power_plant_running(api: AlgotradeApi, resource: Resource):
     global MONEY
 
     if OWNED_PLANTS[resource.value] == 0:
-        if MONEY - MINIMUM_MONEY < PLANTS_PRICES[resource.value]:
+        if MONEY - MINIMUM_MONEY_LEVEL_PER_PLANT > PLANTS_PRICES[resource.value]:
             logger.debug(f"Not enough money to buy {resource.value} plant")
             return False
         else:
@@ -403,6 +404,8 @@ def asset_arbitrage(
                 ),
                 0,
             )
+
+            actual_size = min(actual_size, MONEY // resource_price[i]["price"])
 
             if actual_size == 0:
                 logger.debug(f"Volume of {resource.value} is too high")
